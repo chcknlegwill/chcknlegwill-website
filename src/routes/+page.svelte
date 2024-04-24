@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    let subject = 'bruh';
+</script>
+<svelte:head>
+    <title>William - personal website</title>
+</svelte:head>
+
+<h1>Index page</h1>
+<a href="/blog">blog</a>
