@@ -5,5 +5,5 @@
     <title>William - personal website</title>
 </svelte:head>
 
-<h1>Index page</h1>
-<a href="/blog">blog</a>
+<h1>Index</h1>
+<a href="/blog" id="link">blog</a>

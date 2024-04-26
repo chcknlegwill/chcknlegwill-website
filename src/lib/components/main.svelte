@@ -1,10 +1,7 @@
 <body>
-    <h1>bidt bruh</h1>
+    <p>From -> main.svelte</p>
 </body>
 
 <style>
-    body {
-    background-color: #3c3836;
-    margin: 0;
-}
+    @import "../styles/style.css";
 </style>
