@@ -14,11 +14,9 @@ as I think its a very good font (and I like ligatures)
 }
 
 a {
-    color: #8aa52c;
     text-decoration: none;
 }
 #links {
-    color: #8aa52c;
     text-decoration: none;
 }
 #links:hover {
@@ -67,29 +65,35 @@ hr.solid {
     padding: 4px;
 }
 
-
-.container-buttons {
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container-buttons {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+
+.buttons {
+    font-size: 70px;
+    display: flex;
     gap: 20px;
+}
+
+#button-font {
+    font-size: 30px ;
 }
 
 .back-btn {
     font-size: 30px;
 }
 
-button {
-    display: block;
-    background-color: #ebdbb2;
-    border: 0px solid #cc241d;
-    border-radius: 6px;
-     -webkit-transition : border 100ms  ease-in-out;
-}
-button:hover {
-    cursor: pointer;
-    border-bottom: solid 5px #cc241d;
-}
 
 body {
     background-color: #3c3836;

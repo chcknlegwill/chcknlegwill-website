@@ -1,9 +1,20 @@
-<script lang="ts">
-    let subject = 'bruh';
+<script>
+    import Button from "./button.svelte"
 </script>
 <svelte:head>
     <title>William - personal website</title>
 </svelte:head>
 
-<h1>Index</h1>
-<a href="/blog" id="link">blog</a>
+<main class="main">
+  <div class="container-buttons">
+    <div class="buttons">
+        <Button class="primary">>Blog</Button>
+        <Button class="primary">>Projects</Button>
+    </div>
+  </div>
+</main>
+
+
+<style>
+    @import "../lib/styles/style.css";
+</style>
