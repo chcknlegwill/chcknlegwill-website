@@ -10,7 +10,6 @@ as I think its a very good font (and I like ligatures)
 * { 
     font-family: "Fira Code"; /*could use monospace but Fira Code has those sweet, sweet ligatures*/
     font-weight: 450;
-    color: #d8c699;
 }
 
 a {
@@ -25,8 +24,8 @@ a {
 }
 
 h1 {
-    font-size: 48px;
-    margin: 0;;
+    font-size: 50px;
+    margin: 0;
 }
 
 .github {
@@ -72,22 +71,13 @@ hr.solid {
 }
 
 .container-buttons {
-    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
-}
-
-
-.buttons {
-    font-size: 70px;
-    display: flex;
     gap: 20px;
-}
-
-#button-font {
-    font-size: 30px ;
+    margin-top: 4%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .back-btn {

@@ -1,11 +1,12 @@
 <!--layout - applys globally-->
 
 <script>
-    import Header from '$lib/components/header.svelte';
+    //import Header from '$lib/components/header.svelte';
     //import Body from '$lib/components/main.svelte'
+    //these are global imports and effect every page - need
+    //seperate components for blog and projects (& other pages after that)
 </script>
 
-<Header />
 
 <main>
     <slot />

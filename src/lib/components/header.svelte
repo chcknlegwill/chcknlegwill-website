@@ -6,7 +6,7 @@
         </a>
     </div>
     <div class="title-container">
-        <a href="/"><h1 class="title">chcknlegwill</h1></a>
+        <a href="/"><h1 class="title">Chcknlegwill</h1></a>
     </div>
     <div class="github"  id="github">
         <!--^ this is just a placeholder for now,
