@@ -5,8 +5,11 @@
 
 <Header/>
 <main class="main">
-    <h1>404</h1>
-    <h2>Not Found</h2>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Not Found</h2>
+    </div>
+    
 </main>
 
 <style>
@@ -18,6 +21,12 @@
         flex-direction: column;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     h2 {
         font-size: 40px;
         color: #ebdbb2;

@@ -21,6 +21,9 @@
    </div>
 </main>
 
+<style lang="scss">
+    @import "$lib/styles/blog.css";
+</style>
 <!--
 {#each data.posts as post}
             <a href={post.path}>
@@ -28,4 +31,4 @@
             </a>
        </li> 
     {/each}
-    -->
+-->

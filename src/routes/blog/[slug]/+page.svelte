@@ -6,6 +6,10 @@
     import HeaderBlogSub from '$lib/components/headerBlogSub.svelte';
 </script>
 
+<svelte:head>
+    <title>Blog - {title}</title>
+</svelte:head>
+
 <HeaderBlogSub/>
 <article>
     <h1>{title}</h1>
