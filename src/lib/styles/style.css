@@ -24,7 +24,7 @@ a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin: 0;
 }
 
@@ -66,8 +66,7 @@ hr.solid {
 
 .main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
 .container-buttons {

@@ -1,11 +1,31 @@
-<script>
+<script >
+    import HeaderBlog from "$lib/components/headerBlog.svelte";
+    export let data;
 </script>
+
 
 <svelte:head>
     <title>Blog</title>
-    <h1>blog</h1>
 </svelte:head>
 
-<h1>blog</h1>
-<p>Need to add styling and whatnot to make this look good</p>
-<a href="/" id="links">Home</a>
+<HeaderBlog/>
+<main class="main">
+   <div class="button-container">
+    {#each data.posts as post}
+        <a href={post.path}>
+            <button class="button">
+                {post.meta.title}
+            </button>
+        </a>
+    {/each}
+   </div>
+</main>
+
+<!--
+{#each data.posts as post}
+            <a href={post.path}>
+                {post.meta.title}
+            </a>
+       </li> 
+    {/each}
+    -->

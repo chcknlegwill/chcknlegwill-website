@@ -1,3 +1,9 @@
+<script>
+    import Header from "$lib/components/header.svelte";
+</script>
+
+
+<Header/>
 <main class="main">
     <h1>404</h1>
     <h2>Not Found</h2>
