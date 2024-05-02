@@ -15,6 +15,7 @@
         <a href={post.path}>
             <button class="button">
                 {post.meta.title}
+                {post.meta.description}
             </button>
         </a>
     {/each}

@@ -1,6 +1,5 @@
 <script>
   import Header from '$lib/components/header.svelte';
-  import HeaderBlog from '$lib/components/headerBlog.svelte';
 </script>
 <svelte:head>
     <title>William - personal website</title>
@@ -9,16 +8,16 @@
 <Header/>
 <main class="main">
   <div class="container-buttons">
-      <a class="button" href="/blog">
-        <button>>Blog</button>
+      <a href="/blog">
+        <button class="button">>Blog</button>
       </a>
-      <a class="button" href="/about">
+      <a  href="/about">
         <button class="button">>About</button>
       </a>
       
   </div>
   <div class="container-buttons">
-    <a class="button" href="/projects">
+    <a href="/projects">
         <button class="button">>Projects</button>
       </a>
   </div>

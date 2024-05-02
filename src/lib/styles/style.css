@@ -15,6 +15,9 @@ as I think its a very good font (and I like ligatures)
 a {
     text-decoration: none;
 }
+p {
+    color: #b2a687;
+}
 #links {
     text-decoration: none;
 }
@@ -81,6 +84,16 @@ hr.solid {
 
 .back-btn {
     font-size: 30px;
+}
+.button {
+    background-color: #ebdbb2;
+    border: 0px solid #cc241d;
+    border-radius: 6px;
+    border-bottom: solid 5px #ebdbb2;
+}
+.button:hover {
+    cursor: pointer;
+    border-bottom: solid 5px #cc241d;
 }
 
 
