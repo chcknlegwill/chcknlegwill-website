@@ -1,7 +1,7 @@
 ---
 title: First 
 date: "20/04/2024"
-description: "bruhm moment"
+description: " description: First Blog on the "
 ---
 
 # heading for first

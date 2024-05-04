@@ -12,13 +12,16 @@
 <main class="main">
    <div class="button-container">
     {#each data.posts as post}
+    <div class="button-element">
         <a href={post.path}>
-            <button class="button">
-                {post.meta.title}
-                {post.meta.description}
-            </button>
+        <button class="button">
+            <p class="blog-title">{post.meta.title}</p>
+            <p class="blog-desc">{post.meta.description}</p>
+        </button>
         </a>
+    </div>
     {/each}
+        
    </div>
 </main>
 

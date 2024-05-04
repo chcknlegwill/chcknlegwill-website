@@ -34,6 +34,7 @@
     @import "../lib/styles/style.css";
     button {
       min-width: 225px; /*to max length of largest button (projects)*/
+      height: auto;
       font-size: 38px;
     }
 </style>

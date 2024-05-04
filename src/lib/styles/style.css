@@ -18,6 +18,7 @@ a {
 p {
     color: #b2a687;
 }
+
 #links {
     text-decoration: none;
 }
@@ -90,6 +91,7 @@ hr.solid {
     border: 0px solid #cc241d;
     border-radius: 6px;
     border-bottom: solid 5px #ebdbb2;
+    -webkit-transition: border 100ms ease-in-out;
 }
 .button:hover {
     cursor: pointer;

@@ -2,6 +2,7 @@
 to do seperate styling rn*/
 .main {
     display: flex;
+    height: 100%;
 }
 
 .button-container {
@@ -12,4 +13,26 @@ to do seperate styling rn*/
     margin-top: 4%;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.button-element {
+    flex-direction: column;
+    padding: 5px;
+    width: 30%;
+}
+
+.button {
+    height: 140px;
+}
+
+.blog-title {
+    text-align: start;
+    margin: 0;
+    padding: 0px;
+    font-size: 22px;
+}
+.blog-desc {
+    text-align: start;
+    margin: 0;
+
 }
