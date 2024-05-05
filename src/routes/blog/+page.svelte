@@ -16,6 +16,7 @@
         <a href={post.path}>
         <button class="button">
             <p class="blog-title">{post.meta.title}</p>
+            <p class="desc-header">Description:</p>
             <p class="blog-desc">{post.meta.description}</p>
         </button>
         </a>
