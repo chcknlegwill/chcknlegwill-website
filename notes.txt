@@ -1,3 +1,11 @@
 using dynamic routing as all .md files can be in one 
 folder (blog) rather than having to add a whole new folder,
 I can just add a .md file and the server adjusts accordingly.
+
+Dates must be in this format:
+
+year-month-day (american way smh)
+e.g. 06/05/2024 = 2024-05-06
+
+Otherwise ordering of posts wont work with the
+newest first.

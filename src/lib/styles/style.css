@@ -87,6 +87,7 @@ hr.solid {
     font-size: 30px;
 }
 .button {
+    text-align: start;
     background-color: #ebdbb2;
     border: 0px solid #cc241d;
     border-radius: 6px;

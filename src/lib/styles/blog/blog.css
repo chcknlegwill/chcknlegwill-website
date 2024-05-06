@@ -1,0 +1,66 @@
+/*going to be empty for the fist commit as I cba 
+to do seperate styling rn*/
+.main {
+    display: flex;
+    height: 100%;
+    margin-top: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    max-width: 90%;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.button-blog {
+   text-align: start; 
+
+}
+.button-blog {
+    text-align: start;
+    background-color: #ebdbb2;
+    border: 0px solid #cc241d;
+    min-width: 245px;
+    min-height: 116px;
+    border-radius: 6px;
+    border-bottom: solid 5px #ebdbb2;
+    -webkit-transition: border 100ms ease-in-out;
+}
+.button-blog:hover {
+    cursor: pointer;
+    border-bottom: solid 5px #cc241d;
+}
+
+
+.blog-date {
+    margin: 0;
+    padding: 2px;
+}
+
+.blog-title {
+    color: #585350;
+    text-decoration: underline;
+    font-size: 200%;
+    margin: 0;
+}
+
+
+
+/* This is for the blog itself (the .md files)*/
+article {
+    margin-top: 4%;
+    width: 70%;
+}
+
+h1 {
+    color: #cc241d;
+    text-decoration: underline;
+}
+h2 {
+    color: #d79921;
+}

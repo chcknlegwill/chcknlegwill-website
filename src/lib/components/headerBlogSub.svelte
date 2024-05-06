@@ -25,5 +25,5 @@ to redirect to the blog page instead of the main page-->
 </script>
 
 <style>
-@import "../styles/style.css";
+@import "../styles/blog/blog.css";
 </style>

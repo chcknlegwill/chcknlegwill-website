@@ -18,5 +18,5 @@
 </article>
 
 <style lang="scss">
-    @import "$lib/styles/style.css";
+    @import "$lib/styles/blog/blog.css";
 </style>

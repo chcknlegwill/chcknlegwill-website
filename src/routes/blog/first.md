@@ -1,7 +1,7 @@
 ---
 title: First 
-date: "20/04/2024"
-description: " description: First Blog on the "
+date: "2024-04-22"
+description: "First blog on the site"
 ---
 
 # heading for first
