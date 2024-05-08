@@ -52,14 +52,22 @@ to do seperate styling rn*/
 
 
 /* This is for the blog itself (the .md files)*/
-article {
-    margin-top: 4%;
-    width: 70%;
+.article-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
+article {
+    width: 85%;
+}
+
+.title-blog {
     color: #cc241d;
     text-decoration: underline;
+}
+h1 {
+    color: #cc241d;
 }
 h2 {
     color: #d79921;
