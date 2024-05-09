@@ -11,15 +11,17 @@
       <a href="/blog">
         <button class="button">>Blog</button>
       </a>
-      <a  href="/about">
-        <button class="button">>About</button>
-      </a>
-      
+     
   </div>
   <div class="container-buttons">
     <a href="/projects">
         <button class="button">>Projects</button>
       </a>
+  </div>
+  <div class="container-buttons">
+    <a href="/about">
+      <button class="button">>About</button>
+    </a>
   </div>
 </main>
 
@@ -31,7 +33,7 @@
   /* has independant styling for buttons as they 
   are different as they have specific sizes for the content
   - on the main page they are only one word so I need them big*/
-    @import "../lib/styles/style.css";
+    @import "../lib/styles/blog/blog.css";
     button {
       min-width: 225px; /*to max length of largest button (projects)*/
       height: auto;

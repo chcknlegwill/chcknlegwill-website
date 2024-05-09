@@ -59,8 +59,15 @@ article {
 
 h1 {
     color: #cc241d;
-    text-decoration: underline;
 }
 h2 {
     color: #d79921;
 }
+#links {
+    text-decoration: none;
+}
+#links:hover {
+    color: #738a23;
+    text-decoration: underline;
+}
+
