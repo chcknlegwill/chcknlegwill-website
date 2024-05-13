@@ -7,22 +7,24 @@
 
 <Header/>
 <main class="main">
+  <p>Hello. Welcome to my site. You can find more about me on the <a href="/about">>About</a>
+  page, read something on the blog's or --> explore some of my projects</p>
   <div class="container-buttons">
-      <a href="/blog">
+    <a href="/blog">
         <button class="button">>Blog</button>
-      </a>
-     
-  </div>
-  <div class="container-buttons">
-    <a href="/projects">
-        <button class="button">>Projects</button>
-      </a>
+    </a>
   </div>
   <div class="container-buttons">
     <a href="/about">
       <button class="button">>About</button>
     </a>
   </div>
+  <div class="container-buttons">
+    <a href="/projects">
+        <button class="button">>Projects</button>
+      </a>
+  </div>
+ 
 </main>
 
 

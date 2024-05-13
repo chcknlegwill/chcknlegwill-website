@@ -3,7 +3,7 @@
     const { title, date, Content } = data;
     //above is to import data from .md files
 
-    import HeaderBlogSub from '$lib/components/blog/headerBlogSub.svelte';
+    import HeaderBlogSub from '$lib/components/headerBlogSub.svelte';
 </script>
 
 <svelte:head>

@@ -1,5 +1,5 @@
 <script>
-  import HeaderBlog from "$lib/components/headerBlogSub.svelte";
+  import HeaderBlog from "$lib/components/headerBlog.svelte";
   export let data;
 
   let mouseOver = false;
