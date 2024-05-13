@@ -37,6 +37,20 @@ p {
     font-size:large;
 }
 
+.intro {
+    display: flex;
+    max-width: 80%;
+
+}
+
+#link {
+    color: #b8bb26;
+}
+#link:hover {
+    color: #959720;
+    text-decoration: underline;
+}
+
 .title-container {
     display: flex;
     justify-content: center;

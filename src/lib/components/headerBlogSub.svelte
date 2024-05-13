@@ -1,6 +1,4 @@
-<!-- two different header for blog page and blog's themselves
-as this would route them back to the main page - I need the blogs
-to redirect to the blog page instead of the main page-->
+
 <header class="header">
     <div class="links">
         <a href="https://github.com/chcknlegwill/" target="_blank">
@@ -10,7 +8,7 @@ to redirect to the blog page instead of the main page-->
     <div class="title-container">
         <a href="/blog"><h1 class="title">Chcknlegwill - blog</h1></a>
     </div>
-    <div class="github"  id="github">
+    <div class="github-placeholder"  id="github">
         <!--^ this is just a placeholder for now,
         mainly to get the header to stay in the middle with
         the github image on the left screwing up the flexbox
@@ -25,5 +23,5 @@ to redirect to the blog page instead of the main page-->
 </script>
 
 <style>
-@import "$lib/styles/blog/blog.css";
+@import "../styles/style.css";
 </style>

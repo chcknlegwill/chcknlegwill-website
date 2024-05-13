@@ -49,6 +49,15 @@ to do seperate styling rn*/
 }
 
 
+/*below is for the /about page's title*/
+.content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* This is for the blog itself (the .md files)*/
 .article-container {

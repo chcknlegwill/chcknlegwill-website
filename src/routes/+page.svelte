@@ -7,8 +7,12 @@
 
 <Header/>
 <main class="main">
-  <p>Hello. Welcome to my site. You can find more about me on the <a href="/about">>About</a>
-  page, read something on the blog's or --> explore some of my projects</p>
+  <div class="intro">
+    <p>Hello. Welcome to my site. You can find more about me on the <a href="/about" id="link">>About</a>
+    page, read something on the <a href="/blog" id="link" >>blog </a> or -> explore some of my <a href="/projects" id="link" >>projects </a>
+  </p>
+
+  </div>
   <div class="container-buttons">
     <a href="/blog">
         <button class="button">>Blog</button>
