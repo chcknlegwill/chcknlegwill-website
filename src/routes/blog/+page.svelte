@@ -2,9 +2,6 @@
   import HeaderBlog from "$lib/components/headerBlog.svelte";
   export let data;
 
-  let mouseOver = false;
-  //going to add animations to this once I get the site
-  //working on server and know how to use svelte better
 </script>
 
 <svelte:head>

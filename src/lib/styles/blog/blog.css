@@ -8,6 +8,11 @@ to do seperate styling rn*/
     align-items: center;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
 .button-container {
     max-width: 90%;
     display: flex;

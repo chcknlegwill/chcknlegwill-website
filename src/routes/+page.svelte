@@ -11,6 +11,7 @@
     <p>Hello. Welcome to my site. You can find more about me on the <a href="/about" id="link">>About</a>
     page, read something on the <a href="/blog" id="link" >>blog </a> or -> explore some of my <a href="/projects" id="link" >>projects </a>
   </p>
+  <p>To go back to the previous page, all you need to do is click the heading at the top (chcknlegwill) and you'll be sent to the previous page.</p>
 
   </div>
   <div class="container-buttons">
