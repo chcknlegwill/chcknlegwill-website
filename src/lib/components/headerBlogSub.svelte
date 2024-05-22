@@ -6,7 +6,7 @@
         </a>
     </div>
     <div class="title-container">
-        <a href="/blog"><h1 class="title">Chcknlegwill - blog</h1></a>
+        <a href="/blog"><h1 class="title">Blog</h1></a>
     </div>
     <div class="github-placeholder"  id="github">
         <!--^ this is just a placeholder for now,

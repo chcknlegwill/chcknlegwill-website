@@ -1,5 +1,8 @@
 /*going to be empty for the fist commit as I cba 
 to do seperate styling rn*/
+p {
+    color: #ebdbb2;
+}
 .main {
     display: flex;
     height: 100%;
@@ -28,14 +31,15 @@ to do seperate styling rn*/
 }
 .button-blog {
     text-align: start;
-    background-color: #ebdbb2;
+    background-color: #d5c4a1;
     border: 0px solid #cc241d;
     min-width: 245px;
     min-height: 116px;
     border-radius: 6px;
-    border-bottom: solid 5px #ebdbb2;
+    border-bottom: solid 5px #d5c4a1;
     -webkit-transition: border 100ms ease-in-out;
 }
+
 .button-blog:hover {
     cursor: pointer;
     border-bottom: solid 5px #cc241d;
@@ -45,12 +49,16 @@ to do seperate styling rn*/
 .blog-date {
     margin: 0;
     padding: 2px;
+    color: #504945;
 }
 
 .blog-title {
-    color: #585350;
+    color: #504945;
     text-decoration: underline;
     margin: 0;
+}
+.blog-desc {
+    color: #665c54;
 }
 
 
@@ -88,7 +96,7 @@ h2 {
     text-decoration: none;
 }
 #links:hover {
-    color: #738a23;
+    color: #92b220;
     text-decoration: underline;
 }
 

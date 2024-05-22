@@ -10,9 +10,14 @@
 
 <Header/>
 <main class="main">
-    <div class="button-container">
-        <p>Going to add to this once the main features
-            of the site are working
-        </p>
+    <div class="container-buttons">
+        <a href="projects/rotating_cube">
+            <p>rotating_cube</p>
+        </a>
     </div> 
 </main>
+
+
+<style lang="scss">
+    @import "../../lib/styles/blog/blog.css"
+</style>

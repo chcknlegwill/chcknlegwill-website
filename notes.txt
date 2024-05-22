@@ -9,3 +9,47 @@ e.g. 06/05/2024 = 2024-05-06
 
 Otherwise ordering of posts wont work with the
 newest first.
+
+
+
+below is code for three.js - working to get background animations or
+things for hovering over the header give user feedback:
+
+
+	import { browser } from '$app/environment'; 
+	import * as THREE from "three"
+
+	if(browser) {
+		let camera : THREE.PerspectiveCamera;
+		let scene : THREE.Scene;
+		let renderer : THREE.WebGLRenderer;
+
+		const init = () => {
+      
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			renderer = new THREE.WebGLRenderer();
+			//renderer.setSize( window.innerWidth, window.innerHeight );
+      renderer.setSize( 400, 400)
+			document.body.appendChild( renderer.domElement );
+
+			const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+			const material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
+		}
+
+		const render = () => {
+			renderer.clear()
+			renderer.render(scene, camera);
+		}
+
+		const animate = () => {
+			requestAnimationFrame(animate)
+			//cube.rotation.x += 0.005
+
+			render()
+		}
+
+		init()
+		animate()
+	}

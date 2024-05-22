@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@svelte-web-fonts/google": "^1.0.4"
+		"@svelte-web-fonts/google": "^1.0.4",
+		"three": "^0.164.1"
 	}
 }
