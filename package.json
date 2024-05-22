@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-node": "^5.0.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/three": "^0.164.1",
 		"mdsvex": "^0.11.0",
 		"sass": "^1.75.0",
 		"svelte": "^4.2.7",
@@ -26,6 +27,8 @@
 	"type": "module",
 	"dependencies": {
 		"@svelte-web-fonts/google": "^1.0.4",
+		"@threlte/core": "^7.3.0",
+		"@threlte/extras": "^8.11.2",
 		"three": "^0.164.1"
 	}
 }

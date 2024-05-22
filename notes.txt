@@ -11,10 +11,10 @@ Otherwise ordering of posts wont work with the
 newest first.
 
 
-22 May 2024 - need to find a way to stop three.js
-displaying over all other pages when user
-goes back from other pages
-
+Going to be using threlte to use 
+3d as it has lots of documentation
+and specifically designed for use with 
+svelte.
 
 
 
