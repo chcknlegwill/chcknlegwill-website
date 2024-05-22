@@ -11,6 +11,21 @@ Otherwise ordering of posts wont work with the
 newest first.
 
 
+22 May 2024 - need to find a way to stop three.js
+displaying over all other pages when user
+goes back from other pages
+
+
+
+
+
+
+
+
+
+
+
+
 
 below is code for three.js - working to get background animations or
 things for hovering over the header give user feedback:
