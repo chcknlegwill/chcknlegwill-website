@@ -1,12 +1,16 @@
 /*going to be empty for the fist commit as I cba 
 to do seperate styling rn*/
+
 p {
     color: #ebdbb2;
+    font-size: 14pt;
 }
+
 .main {
     display: flex;
     height: 100%;
     margin-top: 4%;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
@@ -15,6 +19,7 @@ p {
     display: flex;
     flex-direction: column;
 }
+
 
 .button-container {
     max-width: 90%;
@@ -62,14 +67,7 @@ p {
 }
 
 
-/*below is for the /about page's title*/
-.content {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 /* This is for the blog itself (the .md files)*/
@@ -83,14 +81,22 @@ article {
     width: 85%;
 }
 
+hr {
+    border: solid #ebdbb2 1px; 
+    width: 100%;
+}
+
 .title-blog {
     color: #cc241d;
 }
 h1 {
     color: #cc241d;
+    font-size: 220%;
+    text-decoration: underline;
 }
 h2 {
     color: #d79921;
+    text-decoration: underline 3px;
 }
 #links {
     text-decoration: none;
@@ -99,4 +105,3 @@ h2 {
     color: #92b220;
     text-decoration: underline;
 }
-

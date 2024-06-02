@@ -15,21 +15,26 @@
   <p>To go back to the previous page, all you need to do is click the heading at the top and you'll be sent to the previous page.</p>
 
   </div>
-  <div class="container-buttons">
+  <div class="buttons">
+    <div class="container-buttons">
     <a href="/blog">
         <button class="button">>Blog</button>
     </a>
-  </div>
-  <div class="container-buttons">
-    <a href="/about">
-      <button class="button">>About</button>
-    </a>
-  </div>
-  <div class="container-buttons">
-    <a href="/projects">
+    </div>
+    <div class="container-buttons">
+      <a href="/about">
+        <button class="button">>About</button>
+      </a>
+    </div>
+    <div class="container-buttons">
+      <a href="/projects">
         <button class="button">>Projects</button>
       </a>
   </div>
+
+
+  </div>
+  
  
 </main>
 

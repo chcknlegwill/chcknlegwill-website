@@ -1,5 +1,5 @@
 <script>
-  import HeaderBlog from "$lib/components/headerBlog.svelte";
+  import HeaderBlog from "$lib/components/blog/headerBlog.svelte";
   export let data;
 
 </script>

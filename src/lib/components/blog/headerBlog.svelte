@@ -21,11 +21,11 @@ to redirect to the blog page instead of the main page-->
 </header>
 
 <script>
-    import githubImg from "../assesets/github.png";
+    import githubImg from "../../assesets/github.png";
 
 
 </script>
 
 <style>
-@import "../styles/style.css";
+@import "../../styles/style.css";
 </style>
