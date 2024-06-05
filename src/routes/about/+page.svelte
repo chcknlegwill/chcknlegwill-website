@@ -19,7 +19,7 @@
         </p>
         <p>I would like to give credit to the following people for making this site a possibility: </p>
         <li><a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog" target="_blank">Josh Collinsworth </a>(A brilliant tutorial on sveltekit & helped me a LOT).</li>
-        <li><a href="https://mayadevbe.me/" target="_blank">MayADevBe</a> (Blog about computer science that has a great colour-scheme & layout that has definitley inspired my own.)</li>
+        <li><a href="https://mayadevbe.me/" target="_blank">MayADevBe</a> (Blog about computer science that has a great colour-scheme & layout that has definitley inspired my own).</li>
     </div>
 </main>
 

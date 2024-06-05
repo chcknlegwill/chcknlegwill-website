@@ -17,3 +17,7 @@ export const fetchMarkdownPosts = async () => {
 	);
 	return allPosts;
 };
+
+
+//logging system here soon
+//4/6/2024
