@@ -58,7 +58,7 @@ p {
 
 .blog-title {
     color: #504945;
-    text-decoration: underline;
+    text-decoration: underline 1.5pt;
     margin: 0;
 }
 .blog-desc {
