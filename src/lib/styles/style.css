@@ -8,7 +8,7 @@ as I think its a very good font (and I like ligatures)
 /*blog.html*/
 
 * { 
-    font-family: "Fira Code"; /*could use monospace but Fira Code has those sweet, sweet ligatures*/
+    font-family: 'Fira Code';
     font-weight: 450;
 }
 p {

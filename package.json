@@ -26,7 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@svelte-web-fonts/google": "^1.0.4",
+		"@fontsource/fira-code": "^5.0.18",
 		"@threlte/core": "^7.3.0",
 		"@threlte/extras": "^8.11.2",
 		"three": "^0.164.1"
