@@ -20,7 +20,7 @@ the header and the footer (main content in the middle)-->
 <footer><!--footer content goes here--></footer>
 
 <style>
-    *{
+    * {
         font-family: 'Fira Code';
     }
 </style>
