@@ -1,2 +1,2 @@
 # Personal site
-## [chcknlegwill.com] (https://chcknlegwill.com)
+## [chcknlegwill.com](https://chcknlegwill.com)
