@@ -27,6 +27,12 @@ a {
 .github {
     max-width: 12vh;
 }
+.links {
+    min-width: 12vh;
+}
+#placeholder {
+    display: none;
+}
 
 #back-btn {
     display: flex;
