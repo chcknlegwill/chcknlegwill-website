@@ -97,10 +97,3 @@ h2 {
     color: #d79921;
     text-decoration: underline 3px;
 }
-#links {
-    text-decoration: none;
-}
-#links:hover {
-    color: #92b220;
-    text-decoration: underline;
-}
