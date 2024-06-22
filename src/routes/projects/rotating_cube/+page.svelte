@@ -1,8 +1,7 @@
-<p>
-    look! a rotating cube! 
-</p>
-<p>cube</p>
+<script>
+    import App from "./App.svelte"
+    import Scene from "./Scene.svelte"
+</script>
 
-<p>Still a work-in-progress, will get this working soon though
-    (& without attaching to the window and showing up in other parts of the site!)
-</p>
+<App></App>
+
