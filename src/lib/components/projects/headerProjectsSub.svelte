@@ -5,7 +5,7 @@
         </a>
     </div>
     <div class="title-container">
-        <a href="/"><h1 class="title">Projects</h1></a>
+        <a href="/projects"><h1 class="title">Projects</h1></a>
     </div>
     <div class="links">
         <!--^ this is just a placeholder for now,

@@ -5,7 +5,6 @@ as I think its a very good font (and I like ligatures)
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 300 to 700
 */
-/*blog.html*/
 
 * { 
     font-family: 'Fira Code';
@@ -25,9 +24,14 @@ a {
     text-decoration: none;
 }
 
-.github, #back-btn {
-    width: 65px;
-    height: 65px;
+.github {
+    max-width: 12vh;
+}
+.links {
+    min-width: 12vh;
+}
+#placeholder {
+    display: none;
 }
 
 #back-btn {
