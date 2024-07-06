@@ -3,7 +3,6 @@
     // markdown properly to add content easily
     import Header from "$lib/components/headerAbout.svelte"
     // @ts-ignore - .md files work fine thanks to mdsvex
-    import About from "./about.md";
 </script>
 
 <svelte:head>
@@ -13,7 +12,8 @@
 <Header/>
 <main class="main">
     <div class="content">
-        <p>Hello, My name is William. I am the owner of this domain.</p>
+        <p>Hello, My name is William. </p> 
+        <p> I am the owner of this domain (used to be a server but changed to hosting on cloudflare pages due to software versions & cost).</p>
         <p>I am a computer science university student end enjoying it a lot. I am interested in all aspects of computer science.
             Feel free to check out my <a id="link" href="/blog">blog</a> or my <a id="link" href="projects">projects</a> if you are interested in exploring this site more.
         </p>
