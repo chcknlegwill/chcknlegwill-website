@@ -6,12 +6,11 @@ as I think its a very good font (and I like ligatures)
 // <weight>: Use a value from 300 to 700
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 * { 
     font-family: 'Fira Code';
-    font-weight: 450;
-}
-p {
-    color: #ebdbb2;
+    font-weight: 500;
 }
 
 a {
@@ -25,7 +24,8 @@ a {
 }
 
 .github {
-    max-width: 40%;
+    max-width: 100px;
+    max-height: 100px;
 }
 .links {
     min-width: 20%;
