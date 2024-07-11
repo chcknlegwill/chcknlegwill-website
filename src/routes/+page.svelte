@@ -1,6 +1,9 @@
 <script lang="ts">
   import Header from '$lib/components/header.svelte';
-	
+  
+  export let data;
+  const { randomPost } = data;
+
 </script>
 <svelte:head>
     <title>William - personal website</title>
@@ -12,7 +15,7 @@
     <p>Hello. Welcome to my site. You can find more about me on the <a href="/about" id="link">>About</a>
     page, read something on the <a href="/blog" id="link" >>blog </a> or -> explore some of my <a href="/projects" id="link" >>projects </a>
    (or use the buttons below).</p>
-  <p>To go back to the previous page, all you need to do is click the heading at the top and you'll be sent to the previous page.</p>
+  <p>To go back to the previous page, all you need to do is click the heading at the top (Chcknlegwill in this case) and you'll be sent to the previous page.</p>
 
   </div>
   <div class="buttons">
@@ -30,6 +33,23 @@
       <a href="/projects">
         <button class="button">>Projects</button>
       </a>
+  </div>
+
+  <div class="rand-container">
+
+    <div class="spacer"></div>    
+    <div class="desc">
+      <p>Random article from <a href="/blog" id="link">>blog</a> below:</p>
+      <p><a id="link" href="/blog/{randomPost.slug}">Read full post here</a></p>
+    </div>
+
+
+    <hr>
+  <div class="rand">
+    <h1>Title: {randomPost.title}</h1>
+    <p>Published: {randomPost.date}</p>
+    <svelte:component this={randomPost.Content} />
+  </div>
   </div>
 
 
@@ -52,4 +72,11 @@
       height: auto;
       font-size: 38px;
     }
+
+    /* for the random at the bottom of the page */
+
+    .spacer {
+      margin-top: 100px;
+    }
+    
 </style>

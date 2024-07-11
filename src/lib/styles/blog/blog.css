@@ -6,6 +6,7 @@ p {
     font-size: 14pt;
 }
 
+
 .main {
     display: flex;
     height: 100%;
@@ -64,9 +65,6 @@ p {
 .blog-desc {
     color: #665c54;
 }
-
-
-
 
 
 /* This is for the blog itself (the .md files)*/
