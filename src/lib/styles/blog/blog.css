@@ -97,3 +97,12 @@ h2 {
     color: #d79921;
     text-decoration: underline 3px;
 }
+
+.rand a {
+    color: #b8bb26;
+}
+.rand a:hover {
+    color: #959720;
+    text-decoration: underline;
+
+}

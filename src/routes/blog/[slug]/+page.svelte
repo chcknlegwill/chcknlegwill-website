@@ -18,9 +18,10 @@
     <hr>
     <Content />
 </article>
+</div>  
 
-</div>
-
-<style lang="scss">
+<style>
+    
     @import "$lib/styles/blog/blog.css";
+
 </style>

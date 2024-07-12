@@ -15,12 +15,16 @@ as I think its a very good font (and I like ligatures)
 
 a {
     text-decoration: none;
-    color: #b8bb26; 
 }
+
 .title {
     font-size: 48px;
     margin: 0;
     text-decoration: none;
+    text-underline: none;
+}
+.title:hover {
+    text-underline: 0px;
 }
 
 .github {
@@ -47,13 +51,15 @@ a {
     color: #959720;
 }
 
-#link, a {
+#link  {
     color: #b8bb26;
 }
-#link:hover, a:hover {
+#link:hover  {
     color: #959720;
     text-decoration: underline;
 }
+
+
 
 .title-container {
     display: flex;
@@ -143,4 +149,14 @@ body {
 
 li {
     color: #ebdbb2;
+}
+/* end */ 
+
+article a {
+    color: #b8bb26;
+    text-decoration: none; 
+}
+article a:hover  {
+    color: #959720;
+    text-decoration: underline;
 }
