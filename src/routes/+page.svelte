@@ -36,23 +36,19 @@
   </div>
 
   <div class="rand-container">
-
     <div class="spacer"></div>    
     <div class="desc">
       <p>Random article from <a href="/blog" id="link">>blog</a> below:</p>
       <p><a id="link" href="/blog/{randomPost.slug}">Read full post here</a></p>
     </div>
 
-
-    <hr>
-  <div class="rand">
-    <h1>Title: {randomPost.title}</h1>
-    <p>Published: {randomPost.date}</p>
-    <svelte:component this={randomPost.Content} />
-  </div>
-  </div>
-
-
+      <hr>
+      <div class="rand">
+        <h1>Title: {randomPost.title}</h1>
+        <p>Published: {randomPost.date}</p>
+        <svelte:component this={randomPost.Content} />
+      </div>
+    </div>
   </div>
   
  

@@ -10,6 +10,8 @@
 
 <HeaderBlog />
 <main class="main">
+  <!-- add a filter so you can change to 
+   have the oldest or the newest first -->
   <div class="button-container">
     {#each data.posts as post}
       <a href={post.path}>

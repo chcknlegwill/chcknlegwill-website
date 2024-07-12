@@ -23,7 +23,8 @@ p {
 
 
 .button-container {
-    max-width: 90%;
+    width: 80%;
+    margin-top: 2%;
     display: flex;
     gap: 20px;
     flex-direction: row;
@@ -38,8 +39,9 @@ p {
     text-align: start;
     background-color: #d5c4a1;
     border: 0px solid #cc241d;
-    max-width: 80%;
+    width: 448px;
     min-height: 116px;
+    height: 145px;
     border-radius: 6px;
     border-bottom: solid 5px #d5c4a1;
     -webkit-transition: border 100ms ease-in-out;
