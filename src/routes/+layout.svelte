@@ -1,4 +1,4 @@
-<!--layout - applys globally-->
+<!--layout - applies globally-->
 
 <script lang="ts">
     //import Header from '$lib/components/header.svelte';
@@ -18,9 +18,3 @@
 the header and the footer (main content in the middle)-->
 
 <footer><!--footer content goes here--></footer>
-
-<style>
-    * {
-        font-family: 'Fira Code';
-    }
-</style>

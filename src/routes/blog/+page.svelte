@@ -2,6 +2,8 @@
   import HeaderBlog from "$lib/components/blog/headerBlog.svelte";
   export let data;
 
+  import Time, { svelteTime } from "svelte-time";
+
 </script>
 
 <svelte:head>
@@ -16,7 +18,7 @@
     {#each data.posts as post}
       <a href={post.path}>
         <button class="button-blog">
-          <p class="blog-date">{post.meta.date}</p>
+          <p class="blog-date"><Time timestamp="{post.meta.date}"/></p>
           <p class="blog-title">{post.meta.title}</p>
           <p class="blog-desc">{post.meta.description}</p>
         </button>

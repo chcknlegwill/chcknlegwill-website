@@ -4,6 +4,8 @@
     //above is to import data from .md files
 
     import HeaderBlogSub from '$lib/components/blog/headerBlogSub.svelte';
+    import Time, { svelteTime } from "svelte-time";
+
 </script>
 
 <svelte:head>
@@ -14,7 +16,7 @@
 <div class="article-container">
     <article>
     <h1 class="title-blog">{title}</h1>
-    <p>Published: {date}</p>
+    <p>Published: <Time timestamp="{date}"></Time> </p>
     <hr>
     <Content />
 </article>

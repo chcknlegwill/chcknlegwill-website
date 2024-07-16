@@ -13,18 +13,21 @@
         mainly to get the header to stay in the middle with
         the github image on the left screwing up the flexbox
         alignment going more left due to elements on the left-->
-         <a href="https://github.com/chcknlegwill/" target="_blank">
-            <img class="github" id="placeholder"  alt="github logo" src="{githubImg}"/>
-        </a>
     </div>
 </header>
 
 <script>
     import githubImg from "../assesets/github.png";
+    import Time from "svelte-time";
+
+
 
 
 </script>
 
 <style>
 @import "../styles/style.css";
+* {
+    font-family: Fira Code;
+}
 </style>

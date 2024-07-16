@@ -1,5 +1,6 @@
 <script lang="ts">
   import Header from '$lib/components/header.svelte';
+  import Time, { svelteTime } from "svelte-time";
   
   export let data;
   const { randomPost } = data;
@@ -45,7 +46,8 @@
       <hr>
       <div class="rand">
         <h1>Title: {randomPost.title}</h1>
-        <p>Published: {randomPost.date}</p>
+        <p>Published: <Time timestamp="{randomPost.date}" /></p>
+        <!-- have to add Time in here to as it uses different code to load the content-->
         <svelte:component this={randomPost.Content} />
       </div>
     </div>
