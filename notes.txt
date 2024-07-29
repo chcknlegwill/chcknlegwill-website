@@ -17,6 +17,12 @@ and specifically designed for use with
 svelte.
 
 
+Mon 29 Jul 2024:
+Get animation for the description - popping up and so fourth.
+
+- Need to redo the title to be larger and description to be hidden
+
+
 
 
 

@@ -1,9 +1,26 @@
-<script>
+<script lang="ts">
   import HeaderBlog from "$lib/components/blog/headerBlog.svelte";
   export let data;
 
   import Time, { svelteTime } from "svelte-time";
 
+  import { cubicOut } from "svelte/easing";
+
+  function fade(node, { from, to }, params = {}) {
+    const duration = params.duration || 300; //300ms
+    const delay = params.delay || 0:
+
+    return {
+      delay,
+      duration,
+      easing: cubicOut,
+      css: (t, u) => `opacity: $(t);`
+    }
+
+  }
+
+
+  import { fade } from 'svelte/transition'
 </script>
 
 <svelte:head>
@@ -20,7 +37,9 @@
         <button class="button-blog">
           <p class="blog-date"><Time timestamp="{post.meta.date}"/></p>
           <p class="blog-title">{post.meta.title}</p>
-          <p class="blog-desc">{post.meta.description}</p>
+          {#if}<p class="blog-desc1">{post.meta.description}</p>
+            {#elseif} <p class="blog-desc2">{post.meta.title}</p>
+          {/if}
         </button>
       </a>
     {/each}
