@@ -37,4 +37,33 @@
 
 <style lang="scss">
   @import "$lib/styles/blog/blog.css";
+
+  .button-blog {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .description-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-description {
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .button-blog:hover .description-container {
+    transform: translateY(0);
+  }
 </style>
