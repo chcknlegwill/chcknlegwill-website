@@ -1,6 +1,5 @@
 <script lang="ts">
   import HeaderBlog from "$lib/components/blog/headerBlog.svelte";
-    import { PortalTarget } from "@threlte/extras";
   export let data;
 
   import Time, { svelteTime } from "svelte-time";
