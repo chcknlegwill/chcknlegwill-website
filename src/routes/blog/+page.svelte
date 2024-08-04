@@ -5,8 +5,18 @@
   import Time, { svelteTime } from "svelte-time";
   import { fade } from 'svelte/transition';
 
-  let showDesc = false;
+  let showDesc = new Map();
+  let f = false;
 
+function showDescription(postId: string) {
+  showDesc.set(postId, true);
+  showDesc = showDesc;
+}
+
+function hideDescription(postId: string) {
+  showDesc.set(postId, false);
+  showDesc = showDesc;
+}
 
 </script>
 
@@ -25,15 +35,17 @@
     {#each data.posts as post}
       <a href={post.path}>
         <button class="button-blog"
-         on:mouseenter={() => showDesc = true}
-         on:mouseleave={() => showDesc = false}
-         >
+         on:mouseenter={() => showDescription(post.path)}
+         on:mouseleave={() => hideDescription(post.path)}
+         > <!-- had to become a function as each different button fetches different data-->
          
           <p class="blog-date"><Time timestamp="{post.meta.date}"/></p>
           <p class="blog-title">{post.meta.title}</p>
-          <!-- start of blog fade -->
-           {#if showDesc}
+          <!-- start of blog fade --> 
+           {#if showDesc.get(post.path)}
               <p class="blog-description" transition:fade="{{ duration: 300 }}"  >{post.meta.description || "No description available."}</p>
+           {:else}
+              <p class="blog-description-before">bruh</p>
            {/if}
           <!-- end of blog fade -->
         </button>

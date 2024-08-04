@@ -47,7 +47,7 @@ p {
     height: 145px;
     border-radius: 6px;
     border-bottom: solid 5px #d5c4a1;
-    -webkit-transition: border 100ms ease-in-out;
+    transition: border-bottom 300ms ease-in-out;
 }
 
 .button-blog:hover {
