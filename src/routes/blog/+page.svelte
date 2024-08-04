@@ -3,16 +3,11 @@
   export let data;
 
   import Time, { svelteTime } from "svelte-time";
+  import { fade } from 'svelte/transition';
 
-  let hoveredPost: string | null = null;
+  let showDesc = false;
 
-  function handleMouseEnter(postId: string) {
-    hoveredPost = postId;
-  }
 
-  function handleMouseleave() {
-    hoveredPost = null;
-  }
 </script>
 
 <svelte:head>
@@ -23,13 +18,24 @@
 <main class="main">
   <!-- add a filter so you can change to 
    have the oldest or the newest first -->
-  <div class="button-container">
+  <div class="button-container"
+ 
+  >
+    
     {#each data.posts as post}
       <a href={post.path}>
-        <button class="button-blog">
+        <button class="button-blog"
+         on:mouseenter={() => showDesc = true}
+         on:mouseleave={() => showDesc = false}
+         >
+         
           <p class="blog-date"><Time timestamp="{post.meta.date}"/></p>
           <p class="blog-title">{post.meta.title}</p>
-          <p class="blog-description">{post.meta.description || "No description available."}</p>
+          <!-- start of blog fade -->
+           {#if showDesc}
+              <p class="blog-description" transition:fade="{{ duration: 300 }}"  >{post.meta.description || "No description available."}</p>
+           {/if}
+          <!-- end of blog fade -->
         </button>
 
       </a>
@@ -68,9 +74,7 @@
   }
 
   .blog-description {
-    color: white;
-    padding: 10px;
-    text-align: center;
+    color: #665c54;
   }
 
 
