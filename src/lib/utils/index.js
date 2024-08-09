@@ -4,9 +4,7 @@ export const fetchMarkdownPosts = async () => {
 
 	const allPosts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
-			// @ts-ignore
 			const { metadata } = await resolver();
-            //ignore this error too as it works fine as well
 			const postPath = path.slice(11, -3);
 
 			return {

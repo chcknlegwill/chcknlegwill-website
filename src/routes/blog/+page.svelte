@@ -6,7 +6,6 @@
   import { fade } from 'svelte/transition';
 
   let showDesc = new Map();
-  let f = false;
 
 function showDescription(postId: string) {
   showDesc.set(postId, true);
@@ -36,16 +35,18 @@ function hideDescription(postId: string) {
       <a href={post.path}>
         <button class="button-blog"
          on:mouseenter={() => showDescription(post.path)}
-         on:mouseleave={() => hideDescription(post.path)}
-         > <!-- had to become a function as each different button fetches different data-->
-         
+         on:mouseleave={() => hideDescription(post.path)} >          
+
           <p class="blog-date"><Time timestamp="{post.meta.date}"/></p>
           <p class="blog-title">{post.meta.title}</p>
           <!-- start of blog fade --> 
            {#if showDesc.get(post.path)}
-              <p class="blog-description" transition:fade="{{ duration: 300 }}"  >{post.meta.description || "No description available."}</p>
+              <p class="blog-description" transition:fade="{{ duration: 300 }}">{post.meta.description || "No description available."}</p>
            {:else}
-              <p class="blog-description-before">bruh</p>
+              <div class="blog-description"></div>  <!-- Need to get button collapsing & expanding on mouseover -->
+              <!-- transition:fade="{{ duration: 300 }}"-->
+               <!-- note for later -> look into other transitions, maybe just a rotation or smth like that but the fade looks good for now -->
+
            {/if}
           <!-- end of blog fade -->
         </button>
@@ -67,27 +68,9 @@ function hideDescription(postId: string) {
   @import "$lib/styles/blog/blog.css";
 
   .button-blog {
-    position: relative;
     overflow: hidden;
   }
-
-  .description-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .blog-description {
+.blog-description {
     color: #665c54;
-  }
-
-
+}
 </style>

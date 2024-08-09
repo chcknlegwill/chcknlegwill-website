@@ -34,7 +34,7 @@ p {
     flex-wrap: wrap;
 }
 
-
+/* 
 .button-blog {
     display: flex;
     flex-basis: 0;
@@ -48,13 +48,37 @@ p {
     border-radius: 6px;
     border-bottom: solid 5px #d5c4a1;
     transition: border-bottom 300ms ease-in-out;
-}
+}   //Just In Case
+*/
+.button-blog {
+    display: flex;
+    color: #665c54;
+    flex-basis: 0;
+    flex-direction: column;
+    text-align: start;
+    background-color: #d5c4a1;
+    border: 0px solid #cc241d;
+    width: 448px;
+    height: 80px;
+    border-radius: 6px;
+    border-bottom: solid 5px #d5c4a1;
+    transition: all 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    overflow: hidden;
+} /* !!!! This may only be a temporary solution as descriptions could go further than 150px (below) 
+    and could cause it to look bad, but I could just limit description to a word count (e.g. 10) or edit it
+    so it fits to content - have to change bezier curve as it doesnt apply to max/min-content for 
+    some reason !!!! */
 
 .button-blog:hover {
     cursor: pointer;
     border-bottom: solid 5px #cc241d;
+    height: 150px;
+    transition: all 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+.blog-description {
+    color: #665c54;
+}
 
 .blog-date {
     margin: 0;
@@ -72,6 +96,7 @@ p {
 .blog-desc {
     color: #665c54;
 }
+
 
 
 /* This is for the blog itself (the .md files)*/
@@ -101,13 +126,4 @@ h1 {
 h2 {
     color: #d79921;
     text-decoration: underline 3px;
-}
-
-.rand a {
-    color: #b8bb26;
-}
-.rand a:hover {
-    color: #959720;
-    text-decoration: underline;
-
 }
