@@ -35,13 +35,15 @@ function hideDescription(postId: string) {
       <a href={post.path}>
         <button class="button-blog"
          on:mouseenter={() => showDescription(post.path)}
-         on:mouseleave={() => hideDescription(post.path)} >          
+         on:mouseleave={() => hideDescription(post.path)} 
+         >          
 
           <p class="blog-date"><Time timestamp="{post.meta.date}"/></p>
           <p class="blog-title">{post.meta.title}</p>
           <!-- start of blog fade --> 
            {#if showDesc.get(post.path)}
               <p class="blog-description" transition:fade="{{ duration: 300 }}">{post.meta.description || "No description available."}</p>
+              <!-- make the animation just a bit faster - could make the site seem more responsive -->
            {:else}
               <div class="blog-description"></div>  <!-- Need to get button collapsing & expanding on mouseover -->
               <!-- transition:fade="{{ duration: 300 }}"-->

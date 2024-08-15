@@ -52,6 +52,8 @@
       </div>
     </div>
   </div>
+
+  <!-- gotta add an offline options for debugging purposes (still places where they don't have internet) -->
   
  
 </main>
