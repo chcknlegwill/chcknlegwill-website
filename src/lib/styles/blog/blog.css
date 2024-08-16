@@ -72,13 +72,11 @@ p {
 .button-blog:hover {
     cursor: pointer;
     border-bottom: solid 5px #cc241d;
-    height: 160px;
+    height: 150px;
     transition: all 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.blog-description {
-    color: #665c54;
-}
+
 
 .blog-date {
     margin: 0;
