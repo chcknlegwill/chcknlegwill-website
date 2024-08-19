@@ -6,7 +6,11 @@
         </a>
     </div>
     <div class="title-container">
-        <a href="/"><h1 class="title">Chcknlegwill</h1></a>
+        <a href="/">
+            <div class=bruh>
+            <h1 class="title">Chcknlegwill</h1>
+            </div>
+        </a>
     </div>
     <div class="links">
         <!--^ this is just a placeholder for now,
@@ -30,4 +34,12 @@
 * {
     font-family: Fira Code;
 }
+
+h1 {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
 </style>
