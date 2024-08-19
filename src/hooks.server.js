@@ -26,6 +26,9 @@ const logEvents = async (message) => {
 };
 */
 
+//IMPORTANT fs/promises does not work with cloudflare pages (node js modules aren't availible on serverless systems like cloudflare pages ) 
+
+
 /** @type {import("@sveltejs/kit").Handle} */
 export async function handle({ event, resolve}) {
     //if(event.url.pathname.startsWith("/ruh")){
@@ -36,11 +39,14 @@ export async function handle({ event, resolve}) {
     
     const response = await resolve(event);
     const logItem = `${new Date(reqStartTime).toString()} ${event.request.method} ${event.url.pathname} (${Date.now() - reqStartTime}ms) ${response.status}\n`;
+    /*
     try {
         await writeFile("src/logs/logs.txt", logItem, {flag: 'a' }); // logitem, { flag: 'a' }); --> this APPENDS the file rather than overwriting it
     } catch (err) {
         console.error("Error writing to the log file:, ", err);
     }
+        //un-comment the above try statement when website is running on something like a VPS
+    */ 
     console.log(logItem);
 
     return response;
