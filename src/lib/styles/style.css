@@ -21,10 +21,9 @@ a {
     font-size: 48px;
     margin: 0;
     text-decoration: none;
-    text-underline: none;
 }
 .title:hover {
-    text-underline: 0px;
+    text-decoration: none;
 }
 
 .github {
@@ -51,10 +50,10 @@ a {
     color: #959720;
 }
 
-#link  {
+#link {
     color: #b8bb26;
 }
-#link:hover  {
+#link:hover {
     color: #959720;
     text-decoration: underline;
 }

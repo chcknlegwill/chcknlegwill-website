@@ -6,6 +6,8 @@
     import HeaderBlogSub from '$lib/components/blog/headerBlogSub.svelte';
     import Time, { svelteTime } from "svelte-time";
 
+    //add func to add #links to all <a> tags
+
 </script>
 
 <svelte:head>
