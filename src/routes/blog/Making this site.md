@@ -5,3 +5,7 @@ description: "The switch between Node.js & Svelte (Scale isn't an issue atm so t
 ---
 
 ## Bruh moment 
+
+
+
+//gotta fix the background of the other bit for the buttons one sec

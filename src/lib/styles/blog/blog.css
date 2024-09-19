@@ -24,7 +24,6 @@ p {
     flex-direction: column;
 }
 
-
 .button-container {
     width: 80%;
     margin-top: 2%;
@@ -32,6 +31,12 @@ p {
     gap: 20px;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-grow: 2;
 }
 
 /* 
@@ -70,9 +75,9 @@ p {
     some reason !!!! */
 
 .button-blog:hover {
-    cursor: pointer;
+    cursor:     pointer;
     border-bottom: solid 5px #cc241d;
-    height: 150px;
+    height: 200px;
     transition: all 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 

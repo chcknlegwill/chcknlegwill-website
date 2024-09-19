@@ -20,10 +20,11 @@
 
   </div>
   <div class="buttons">
+    <div class="buttons-container">
     <div class="container-buttons">
-    <a href="/blog">
+      <a href="/blog">
         <button class="button">>Blog</button>
-    </a>
+      </a>
     </div>
     <div class="container-buttons">
       <a href="/about">
@@ -34,6 +35,7 @@
       <a href="/projects">
         <button class="button">>Projects</button>
       </a>
+  </div>
   </div>
 
   <div class="rand-container">
@@ -77,6 +79,15 @@
 
     .spacer {
       margin-top: 100px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    a {
+      color: rgb(85, 165, 85);
     }
     
 </style>

@@ -1,6 +1,8 @@
 
 <header class="header">
-    <div class="links">
+    <div class="main">
+
+       <div class="links">
         <a href="https://github.com/chcknlegwill/" target="_blank">
             <img class="github" id="github"  alt="github logo" src="{githubImg}"/>
         </a>
@@ -17,7 +19,9 @@
         mainly to get the header to stay in the middle with
         the github image on the left screwing up the flexbox
         alignment going more left due to elements on the left-->
+    </div> 
     </div>
+    
 </header>
 
 <script>
@@ -34,6 +38,27 @@
 * {
     font-family: Fira Code;
 }
+
+
+header {
+    border: #b2a687 solid 2px;
+    padding-inline: 50px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-grow:0.5;
+    margin-top: -1px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
 
 h1 {
     text-decoration: none;
