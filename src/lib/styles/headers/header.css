@@ -1,0 +1,19 @@
+
+
+  header {
+    padding-bottom: 20px;
+    border-bottom: solid 2px #ebdbb2;
+  }
+
+  .header {
+      display: flex;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      /*^-> don't touch the padding!!!*/
+      border: solid 2px goldenrod ;
+      flex-direction: row;
+      align-items: center;
+  }
+  .border {
+    display: flex;
+  }

@@ -1,10 +1,3 @@
-  /*
-font in /images
-using the font that I use for developing
-as I think its a very good font (and I like ligatures)
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 700
-*/
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
@@ -17,12 +10,6 @@ a {
     text-decoration: none;
 }
 
-.header {
-    border: #3c3836 solid 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .title{
     font-size: 48px;
@@ -77,14 +64,7 @@ a {
     
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    vertical-align: top;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-bottom: solid 2px #ebdbb2;
-}
+
 
 hr.solid {
     color:#b2a687; 
@@ -100,11 +80,6 @@ hr.solid {
     padding: 4px;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 #main {
    display: flex;
