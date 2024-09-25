@@ -20,14 +20,6 @@ a {
     text-decoration: none;
 }
 
-.github {
-    max-width: 700px;
-    max-height: 70px;
-}
-.links {
-    min-width: 20%;
-    margin-right : 7vh;
-}
 #placeholder {
     display: none;
 }
@@ -52,19 +44,6 @@ a {
     color: #959720;
     text-decoration: underline;
 }
-
-
-
-.title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    margin: 3%;
-    
-}
-
-
 
 hr.solid {
     color:#b2a687; 

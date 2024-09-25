@@ -8,25 +8,22 @@ to redirect to the blog page instead of the main page-->
         </a>
     </div>
     <div class="title-container">
-        <a href="/"><h1 class="title">Blog</h1></a>
+      <a href="/">
+        <div class="bruh">
+          <h1 class="title">Blog</h1>
+        </div>
+      </a>
     </div>
     <div class="links">
-        <!--^ this is just a placeholder for now,
-        mainly to get the header to stay in the middle with
-        the github image on the left screwing up the flexbox
-        alignment going more left due to elements on the left-->
-         <a href="https://github.com/chcknlegwill/" target="_blank">
-            <img class="github" id="placeholder"  alt="github logo" src="{githubImg}"/>
-        </a>
+      <!--placeholder -->
     </div>
 </header>
 
 <script>
     import githubImg from "../../assesets/github.png";
 
-
 </script>
 
 <style>
-@import "../../styles/style.css";
+@import "../../styles/headers/header.css";
 </style>

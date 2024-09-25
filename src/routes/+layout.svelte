@@ -18,3 +18,9 @@
 the header and the footer (main content in the middle)-->
 
 <footer><!--footer content goes here--></footer>
+
+<style>
+main {
+    min-width: 876px;
+  }
+</style>

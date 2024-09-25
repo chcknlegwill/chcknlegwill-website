@@ -1,19 +1,40 @@
+header {
+  /*padding-bottom: 20px;*/
+  border-bottom: solid 2px #ebdbb2;
+  margin: 10px;
+}
 
+h1 {
+  min-width: 369.6;
+}
 
-  header {
-    padding-bottom: 20px;
-    border-bottom: solid 2px #ebdbb2;
-  }
+.header {
+  display: flex;
+  /*border: solid 2px #ebdbb2;*/
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-  .header {
-      display: flex;
-      padding-bottom: 25px;
-      padding-top: 25px;
-      /*^-> don't touch the padding!!!*/
-      border: solid 2px goldenrod ;
-      flex-direction: row;
-      align-items: center;
-  }
-  .border {
-    display: flex;
-  }
+.border {
+  display: flex;
+}
+
+.github {
+  max-width: 700px;
+  max-height: 70px;
+}
+
+.links {
+  min-width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  
+}

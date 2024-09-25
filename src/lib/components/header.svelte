@@ -20,15 +20,10 @@
         alignment going more left due to elements on the left-->
       </div> 
     </div>
-    
 </header>
 
 <script>
     import githubImg from "../assesets/github.png";
-    import Time from "svelte-time";
-
-
-
 
 </script>
 
