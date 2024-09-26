@@ -1,7 +1,7 @@
 <script>
     //need to add content but this is when I implement
     // markdown properly to add content easily
-    import Header from "$lib/components/headerAbout.svelte"
+    import Header from "$lib/components/header.svelte"
     // @ts-ignore - .md files work fine thanks to mdsvex
 </script>
 

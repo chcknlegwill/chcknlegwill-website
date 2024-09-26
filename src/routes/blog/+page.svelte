@@ -1,5 +1,5 @@
 <script lang="ts">
-  import HeaderBlog from "$lib/components/blog/headerBlog.svelte";
+  import Header from "$lib/components/header.svelte";
   export let data;
 
   import Time, { svelteTime } from "svelte-time";
@@ -23,7 +23,7 @@ function hideDescription(postId: string) {
   <title>Blog</title>
 </svelte:head>
 
-<HeaderBlog />
+<Header/>
 <main class="main">
   <!-- add a filter so you can change to 
    have the oldest or the newest first -->

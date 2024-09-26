@@ -1,3 +1,11 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
 header {
   /*padding-bottom: 20px;*/
   border-bottom: solid 2px #ebdbb2;
@@ -37,4 +45,30 @@ h1 {
   align-items: center;
   margin: 3%;
   
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav {
+  display: flex;
+  flex-grow: 1;
+  max-width: 80%;
+  gap: 20px;
+}
+.nav-btn {
+  font-size: 1pt;
+}
+.nav-btn a.active p {
+  padding-bottom: 3px;
+  border-bottom-style: solid 5px underline rgb(208, 39, 39);
+}
+
+.nav-btn:hover {
+  border-bottom-style: solid 5px underline rgb(208, 39, 29);
 }
