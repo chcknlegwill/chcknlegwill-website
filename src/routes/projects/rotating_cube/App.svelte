@@ -2,7 +2,7 @@
   import { Canvas } from '@threlte/core'
   import Scene from './Scene.svelte'
 
-  import Header from "$lib/components/projects/headerProjectsSub.svelte"
+  import Header from "$lib/components/projects/headerSub.svelte"
 </script>
 
 <Header></Header>

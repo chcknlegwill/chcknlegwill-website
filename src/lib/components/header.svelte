@@ -20,10 +20,38 @@
         alignment going more left due to elements on the left-->
       </div> 
     </div>
-</header>
 
+    
+</header>
+<nav>
+      <div class="nav">
+        <div class="nav-btn">
+          <a href="/" class:active={url === "/"}>
+            <p>Chcknlegwill</p>
+          </a>
+        </div>
+        <div class="nav-btn">
+          <a href="/blog" class:active={url === "/blog"}>
+            <p>Blog</p>
+          </a>
+        </div>
+        <div class="nav-btn">
+          <a href="/about"  id="nav-btn" class:active={url === "/about"}>
+            <p>About</p>
+          </a>
+        </div>
+        <div class="nav-btn">
+          <a href="/projects" class:active={url === "/projects"}>
+            <p>Projects</p>
+          </a>
+        </div>
+      </div>
+    </nav>
 <script>
     import githubImg from "../assesets/github.png";
+
+    import { page } from "$app/stores"
+    $: url = $page.url.pathname
 
 </script>
 
@@ -65,4 +93,5 @@ a:hover {
 }
 
 */
+
 </style>
