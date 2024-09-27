@@ -61,17 +61,56 @@ nav {
   max-width: 80%;
   gap: 20px;
 }
+
+
 .nav-btn {
-  font-size: 1pt;
+  position: relative;
+  display: inline-block;
 }
-.nav-btn a.active p {
-  padding-bottom: 3px;
-  border-bottom-style: solid 5px underline rgb(208, 39, 39);
+
+.nav-btn a {
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.nav::after {
+  content: '';
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(208, 39, 29);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-btn a.active::after {
+  transform: scaleX(1);
+  background-color: blueviolet;
+}
+
+.nav-btn a.active {
+  color: blueviolet !important;
+}
+
+
+
+
+
+/*
+a.active {
+  color: blueviolet;
 }
 
 .nav-btn:hover {
   border-bottom-style: solid 5px underline rgb(208, 39, 29);
 }
+
 
 /*
 

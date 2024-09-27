@@ -1,3 +1,10 @@
+<script>
+    import githubImg from "../assesets/github.png";
+
+    import { page } from "$app/stores"
+    $: url = $page.url.pathname
+
+</script>
 
 <header>
     <div class="header">
@@ -27,7 +34,7 @@
       <div class="nav">
         <div class="nav-btn">
           <a href="/" class:active={url === "/"}>
-            <p>Chcknlegwill</p>
+            <p>Home</p>
           </a>
         </div>
         <div class="nav-btn">
@@ -47,22 +54,52 @@
         </div>
       </div>
     </nav>
-<script>
-    import githubImg from "../assesets/github.png";
 
-    import { page } from "$app/stores"
-    $: url = $page.url.pathname
-
-</script>
-
-<style>
+<style lang="scss">
 @import "../styles/headers/header.css";
 
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-* {
-    font-family: Fira Code;
-}
+  .nav-btn {
+    position: relative;
+    margin: 0 10px;
+  }
 
+  .nav-btn a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #ebdbb2; /* Adjust color as needed */
+    font-family: 'Fira Code', monospace;
+  }
+
+  .nav-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(208, 39, 29);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-btn:hover::after,
+  .nav-btn a.active::after {
+    transform: scaleX(1);
+  }
+
+  .nav-btn a.active::after {
+    background-color: blueviolet;
+  }
+
+  .nav-btn a.active {
+    color: blueviolet;
+  }
 
 /*
 header {

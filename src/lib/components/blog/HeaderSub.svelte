@@ -27,7 +27,7 @@
     <div class="nav">
       <div class="nav-btn">
         <a href="/">
-          <p>Chcknlegwill</p>
+          <p>Home</p>
         </a>
       </div>
       <div class="nav-btn">
