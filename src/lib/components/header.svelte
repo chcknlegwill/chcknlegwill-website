@@ -1,3 +1,10 @@
+<script>
+    import githubImg from "../assesets/github.png";
+
+    import { page } from "$app/stores"
+    $: url = $page.url.pathname
+
+</script>
 
 <header>
     <div class="header">
@@ -25,45 +32,79 @@
 </header>
 <nav>
       <div class="nav">
-        <div class="nav-btn">
-          <a href="/" class:active={url === "/"}>
-            <p>Chcknlegwill</p>
+          <a href="/" class="nav-btn" class:active={url === "/"}>
+            <p class="nav-txt">Home</p>
           </a>
-        </div>
-        <div class="nav-btn">
-          <a href="/blog" class:active={url === "/blog"}>
-            <p>Blog</p>
+          <a href="/blog" class="nav-btn" class:active={url === "/blog"}>
+            <p class="nav-txt" >Blog</p>
           </a>
-        </div>
-        <div class="nav-btn">
-          <a href="/about"  id="nav-btn" class:active={url === "/about"}>
-            <p>About</p>
+          <a href="/about"  class="nav-btn" class:active={url === "/about"}>
+            <p class="nav-txt">About</p>
           </a>
-        </div>
-        <div class="nav-btn">
-          <a href="/projects" class:active={url === "/projects"}>
-            <p>Projects</p>
+          <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
+            <p class="nav-txt">Projects</p>
           </a>
-        </div>
       </div>
     </nav>
-<script>
-    import githubImg from "../assesets/github.png";
 
-    import { page } from "$app/stores"
-    $: url = $page.url.pathname
-
-</script>
-
-<style>
+<style lang="scss">
 @import "../styles/headers/header.css";
 
 
-* {
-    font-family: Fira Code;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 80%;
+}
 
+.nav-btn {
+    position: relative;
+    text-decoration: none;
+    color: #ebdbb2;
+    transition: color 0.3s ease;
+}
+
+.nav-txt {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(208, 39, 29);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-btn:hover::after,
+.nav-btn.active::after {
+    transform: scaleX(1);
+}
+
+.nav-btn:hover {
+    color: rgb(208, 39, 29);
+}
+
+.nav-btn.active {
+    color: blueviolet;
+}
+
+.nav-btn.active::after {
+    background-color: blueviolet;
+}
 /*
 header {
     border: #b2a687 solid 2px;
