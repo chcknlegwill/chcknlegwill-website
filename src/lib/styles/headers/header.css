@@ -6,6 +6,10 @@
   scrollbar-width: none;
 }
 
+#nav-txt {
+  margin: 0;
+}
+
 header {
   /*padding-bottom: 20px;*/
   border-bottom: solid 2px #ebdbb2;
@@ -62,15 +66,8 @@ nav {
   gap: 20px;
 }
 
-
-.nav-btn {
-  position: relative;
-  display: inline-block;
-}
-
-.nav-btn a {
+a {
   text-decoration: none;
-  padding-bottom: 5px;
 }
 
 .nav::after {
