@@ -19,7 +19,7 @@
 </header>
 
 <script>
-    import githubImg from "../../assets/github.png";
+    import githubImg from "../../assesets/github.png";
 
 
 </script>
