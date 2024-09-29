@@ -11,9 +11,7 @@ p {
 
 
 .main {
-    display: flex;
-    height: 100%;
-    margin-top: 4%;
+    height: 90%;
     flex-flow: column;
     justify-content: center;
     align-items: center;

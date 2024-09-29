@@ -1,5 +1,5 @@
 <script>
-    import githubImg from "../assets/github.png";
+    import githubImg from "../../assets/github.png";
 
     import { page } from "$app/stores"
     $: url = $page.url.pathname
@@ -48,7 +48,7 @@
     </nav>
 
 <style lang="scss">
-@import "../styles/headers/header.css";
+@import "../../styles/headers/header.css";
 
 
 nav {
@@ -63,7 +63,6 @@ nav {
     justify-content: center;
     gap: 20px;
     max-width: 80%;
-    padding-bottom: 20px;
 }
 
 .nav-btn {

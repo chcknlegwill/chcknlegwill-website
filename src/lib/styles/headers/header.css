@@ -1,0 +1,96 @@
+::--webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+.nav-txt {
+  margin: 0;
+}
+
+header {
+  /*padding-bottom: 20px;*/
+  border-bottom: solid 2px #ebdbb2;
+  margin: 10px;
+}
+
+h1 {
+  min-width: 369.5;
+}
+
+.header {
+  display: flex;
+  /*border: solid 2px #ebdbb2;*/
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.border {
+  display: flex;
+}
+
+.github {
+  max-width: 700px;
+  max-height: 70px;
+}
+
+.links {
+  min-width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav {
+  display: flex;
+  max-width: 80%;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav::after {
+  content: '';
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c01919;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover::after {
+  /*Highlights current link that the user is hovering over.*/
+  transform: scaleX(1);
+}
+
+.navbtn a.active::after {
+  /*Highlights current page that the user is on (home, about, blog or projects)*/
+  transform: scaleX(1);
+  background-color: goldenrod;
+}
+
+
+.nav-btn a.active {
+  color: goldenrod !important;
+}

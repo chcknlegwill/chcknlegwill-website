@@ -1,5 +1,5 @@
 <script lang="ts">
-  import HeaderBlog from "$lib/components/blog/headerBlog.svelte";
+  import HeaderBlog from "$lib/components/header.svelte";
   export let data;
 
   import Time, { svelteTime } from "svelte-time";
