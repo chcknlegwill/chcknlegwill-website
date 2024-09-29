@@ -12,9 +12,9 @@
 
 header {
   /*padding-bottom: 20px;*/
-  border-bottom: solid 2px #ebdbb2;
-  margin: 10px;
-}
+  /*border-bottom: solid 2px #ebdbb2; */
+  /* border-bottom is on top of the nav bar */
+  margin: 10px;}
 
 h1 {
   min-width: 369.5;
@@ -51,11 +51,19 @@ h1 {
 }
 
 
+
+
+
+.bruh {
+  display: flex;
+}
+
 nav {
   display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
+align-items: center;
+
 }
 .nav {
   display: flex;

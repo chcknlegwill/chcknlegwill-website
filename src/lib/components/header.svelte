@@ -29,24 +29,27 @@
     </div>
 
     
-</header>
 <nav>
-      <div class="nav">
-          <a href="/" class="nav-btn" class:active={url === "/"}>
-            <p class="nav-txt">Home</p>
-          </a>
-          <a href="/blog" class="nav-btn" class:active={url === "/blog"}>
-            <p class="nav-txt" >Blog</p>
-          </a>
-          <a href="/about"  class="nav-btn" class:active={url === "/about"}>
-            <p class="nav-txt">About</p>
-          </a>
-          <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
-            <p class="nav-txt">Projects</p>
-          </a>
-      </div>
-    </nav>
 
+<div class="nav">
+  <div class="bruh">
+    <a href="/" class="nav-btn" class:active={url === "/"}>
+      <p class="nav-txt">Home</p>
+    </a>
+    <a href="/blog" class="nav-btn" class:active={url === "/blog"}>
+      <p class="nav-txt" >Blog</p>
+    </a>
+    <a href="/about"  class="nav-btn" class:active={url === "/about"}>
+      <p class="nav-txt">About</p>
+    </a>
+    <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
+      <p class="nav-txt">Projects</p>
+    </a>
+   </div>
+  </div>
+</nav>
+
+</header>
 <style lang="scss">
 @import "../styles/headers/header.css";
 
