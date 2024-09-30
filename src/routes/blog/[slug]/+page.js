@@ -1,6 +1,7 @@
+// @ts-ignore
 export async function load({ params }) {
     const post = await import(`../${params.slug}.md`);
-    const { title, date } = post.metadata;
+    const { title, date, lastModified } = post.metadata;
     const Content = post.default;
     //need to get description here but the date and title
     //will do for now
@@ -8,7 +9,8 @@ export async function load({ params }) {
     return {
         Content,
         title,
-        date
+        date,
+        lastModified
     };
 }
 

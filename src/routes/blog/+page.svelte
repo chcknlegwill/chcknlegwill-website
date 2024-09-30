@@ -35,10 +35,15 @@ function hideDescription(postId: string) {
       <a href={post.path}>
         <button class="button-blog"
          on:mouseenter={() => showDescription(post.path)}
-         on:mouseleave={() => hideDescription(post.path)} 
+         on:mouseleave={() => hideDescription(post.path)}
          >          
 
-          <p class="blog-date"><Time timestamp="{post.meta.date}"/></p>
+         <div class="dates">
+
+          <p class="blog-date">Date added: <Time timestamp="{post.meta.date}"/></p> <p class="blog-date">|</p>
+          <p class="blog-date">Last Updated: <Time timestamp="{post.meta.lastModified}"/></p>
+
+         </div>
           <p class="blog-title">{post.meta.title}</p>
           <!-- start of blog fade --> 
            {#if showDesc.get(post.path)}
