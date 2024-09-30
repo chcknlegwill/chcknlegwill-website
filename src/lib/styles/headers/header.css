@@ -12,7 +12,7 @@
 
 header {
   /*padding-bottom: 20px;*/
-  /*border-bottom: solid 2px #ebdbb2; */
+ /*border-bottom: solid 2px #ebdbb2; */
   /* border-bottom is on top of the nav bar */
   margin: 10px;}
 
@@ -22,7 +22,7 @@ h1 {
 
 .header {
   display: flex;
-  /*border: solid 2px #ebdbb2;*/
+  /* border: solid 2px #ebdbb2; outlines the whole border */
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -52,53 +52,76 @@ h1 {
 
 
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3836;
+  width: 100%;
+}
 
 
 .bruh {
   display: flex;
-}
-
-nav {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-align-items: center;
-
-}
-.nav {
-  display: flex;
-  max-width: 80%;
   gap: 20px;
+}
+
+.nav {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #ebdbb2;
 }
 
 a {
   text-decoration: none;
 }
 
-.nav::after {
-  content: '';
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #c01919;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+
+
+.nav-btn {
+    position: relative;
+    text-decoration: none;
+    color: #ebdbb2;
+    transition: color 0.3s ease;
 }
 
-.nav-btn:hover::after {
-  /*Highlights current link that the user is hovering over.*/
-  transform: scaleX(1);
+.nav-txt {
+    position: relative;
+    z-index: 1;
 }
 
-.navbtn a.active::after {
-  /*Highlights current page that the user is on (home, about, blog or projects)*/
-  transform: scaleX(1);
-  background-color: goldenrod;
+.nav-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(208, 39, 29);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
+.nav-btn:hover::after,
+.nav-btn.active::after {
+    transform: scaleX(1);
+}
 
-.nav-btn a.active {
-  color: goldenrod !important;
+.nav-btn:hover {
+    color: rgb(208, 39, 29);
+}
+
+.nav-btn.active {
+    color: blueviolet;
+}
+
+.nav-btn.active::after {
+    background-color: blueviolet;
 }

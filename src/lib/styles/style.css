@@ -18,7 +18,6 @@ a {
 }
 
 .header {
-    border: #3c3836 solid 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +82,8 @@ a {
     vertical-align: top;
     padding-left: 20px;
     padding-right: 20px;
-    /* border-bottom: solid 2px #ebdbb2; */
+    border-bottom: solid 2px #ebdbb2;
+    margin-bottom:10px;
     /*This is above the nav bar */
 }
 
@@ -131,6 +131,7 @@ hr.solid {
     margin-top: 4%;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 1;
 }
 
 .back-btn {
@@ -140,6 +141,7 @@ hr.solid {
     text-align: start;
     background-color: #d5c4a1;
     border: 0px solid #cc241d;
+    border-bottom: 5px solid #d5c4a1;
     border-radius: 6px;
     -webkit-transition: border 100ms ease-in-out;
 }
