@@ -150,11 +150,6 @@ hr.solid {
     border-bottom: solid 5px #cc241d;
 }
 
-
-body {
-    background-color: #3c3836;
-}
-
 /*below is for the /about page's title*/
 .content {
     display: flex;
@@ -175,4 +170,8 @@ article a {
 article a:hover  {
     color: #959720;
     text-decoration: underline;
+}
+
+body {
+    background-color: #3c3836;
 }

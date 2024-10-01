@@ -4,6 +4,7 @@ import githubImg from "../assets/github.png";
 import { page } from "$app/stores"
 $: url = $page.url.pathname
 
+import Button from "./buttons/light-btn.svelte"
 </script>
 
 <header>
@@ -45,6 +46,7 @@ $: url = $page.url.pathname
     <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
       <p class="nav-txt">Projects</p>
     </a>
+  </div>
 
 <nav_dl-btn>
 
@@ -53,9 +55,9 @@ $: url = $page.url.pathname
   <!--gonna add a wrap to get the butts added together 
   gonna have it slanted or curved & add a animation for the 
   transition-->
-  <button class="light-dark_bt" id="light">
+  <Button class="light-dark_bt" id="light">
     Dark / Light
-  </button>
+  </Button>
 </light-dark>
 
 </nav_dl-btn>

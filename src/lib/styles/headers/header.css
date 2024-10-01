@@ -137,15 +137,11 @@ nav_dl-btn {
   z-index: 100;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-self: flex-end;
+  justify-content: flex-end;
   background-color: #3c3836;
-  width: 100%;
-  margin-left: 100vh;
 }
 
 
 .light-dark_bt {
   display: flex;
-  width: 80%;
 }
