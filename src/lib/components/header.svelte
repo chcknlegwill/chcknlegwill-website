@@ -29,11 +29,11 @@ $: url = $page.url.pathname
     </div>
 
 </header>
-    
+
 <nav> 
-<div class="nav" >
-  <div class="bruh">
-    <a href="/" class="nav-btn" class:active={url === "/"}>
+  <div class="nav" >
+    <div class="bruh">
+      <a href="/" class="nav-btn" class:active={url === "/"}>
       <p class="nav-txt">Home</p>
     </a>
     <a href="/blog" class="nav-btn" class:active={url === "/blog"}>
@@ -45,11 +45,23 @@ $: url = $page.url.pathname
     <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
       <p class="nav-txt">Projects</p>
     </a>
-   </div>
-  </div>
-</nav>
 
+<nav_dl-btn>
+
+<light-dark>
+  <!--Get logic working here l8r on-->
+  <!--gonna add a wrap to get the butts added together 
+  gonna have it slanted or curved & add a animation for the 
+  transition-->
+  <button class="light-dark_bt" id="light">
+    Dark / Light
+  </button>
+</light-dark>
+
+</nav_dl-btn>
+</nav> 
 <style lang="scss">
-@import "../styles/headers/header.css";
 
+
+@import "../styles/headers/header.css";
 </style>
