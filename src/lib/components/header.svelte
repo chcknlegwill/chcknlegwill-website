@@ -2,9 +2,23 @@
 import githubImg from "../assets/github.png";
 
 import { page } from "$app/stores"
+    import { calcKoverI } from "three/examples/jsm/curves/NURBSUtils.js";
 $: url = $page.url.pathname
 
-import Button from "./buttons/light-btn.svelte"
+//import Button from "./buttons/light-btn.svelte"
+let darkMode = false;
+
+function toggleTheme() {
+  darkMode = !darkMode;
+  if (darkMode) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+
+  } else {
+    document.body.classList.add("light")
+    document.body.classList.remove("dark")
+  }
+}
 </script>
 
 <header>
@@ -55,9 +69,9 @@ import Button from "./buttons/light-btn.svelte"
   <!--gonna add a wrap to get the butts added together 
   gonna have it slanted or curved & add a animation for the 
   transition-->
-  <Button class="light-dark_bt" id="light">
-    Dark / Light
-  </Button>
+  <button class="light-dark_bt" id="light" on:click={toggleTheme}>
+    {darkMode ? "Light Mode" : "Dark Mode"}
+  </button>
 </light-dark>
 
 </nav_dl-btn>

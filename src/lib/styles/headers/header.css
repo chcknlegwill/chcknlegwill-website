@@ -138,10 +138,78 @@ nav_dl-btn {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+}
+body {
   background-color: #3c3836;
 }
 
 
-.light-dark_bt {
-  display: flex;
+body.light {
+  color:#f0e7d8 ;
+}
+
+
+body.dark-mode .nav_dl-btn {
+  background-color: #ddd;
+  color: #333;
+}
+
+
+ .light-dark_bt {
+    display: flex;
+  }
+
+  body {
+    background-color: #3c3836;
+    transition: background-color 0.3s ease;
+  }
+
+  body.light {
+    background-color: #f0e7d8;
+    color: #3c3836;
+  }
+
+  body.dark {
+    background-color: #3c3836;
+    color: #f0e7d8;
+  }
+
+  body.light .nav {
+    background-color: #f0e7d8;
+  }
+
+  body.dark .nav {
+    background-color: #3c3836;
+  }
+:root {
+  --background-color: #f0e7d8;
+  --text-color: #3c3836;
+  --title-color: #d65d0e; /* example title color for light mode */
+}
+
+body.dark {
+  --background-color: #3c3836;
+  --text-color: #f0e7d8;
+  --title-color: #fabd2f; /* example title color for dark mode */
+}
+
+
+
+
+
+
+  body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1.title {
+  color: var(--title-color);
+  transition: color 0.3s ease;
+}
+
+a.nav-btn, a.nav-txt {
+  color: var(--text-color);
+  transition: color 0.3s ease;
 }
