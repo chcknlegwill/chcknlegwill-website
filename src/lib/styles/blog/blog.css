@@ -4,10 +4,12 @@ to do separate styling rn*/
     font: "Fira Code";
 }
 
+/*
 p {
     color: #ebdbb2;
     font-size: 14pt;
 }
+*/
 
 #underline {
     text-decoration: underline solid 2px #ebdbb2 

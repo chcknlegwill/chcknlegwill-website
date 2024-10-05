@@ -1,9 +1,24 @@
-<script lang="ts">
+<script>
 import githubImg from "../assets/github.png";
 
 import { page } from "$app/stores"
+import HeaderSub from "./blog/HeaderSub.svelte";
 $: url = $page.url.pathname
 
+//import Button from "./buttons/light-btn.svelte"
+let darkMode = true;
+
+function toggleTheme() {
+  darkMode = !darkMode;
+  if (darkMode) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+
+  } else {
+    document.body.classList.add("light")
+    document.body.classList.remove("dark")
+  }
+}
 </script>
 
 <header>
@@ -45,6 +60,7 @@ $: url = $page.url.pathname
     <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
       <p class="nav-txt">Projects</p>
     </a>
+  </div>
 
 <nav_dl-btn>
 
@@ -53,8 +69,8 @@ $: url = $page.url.pathname
   <!--gonna add a wrap to get the butts added together 
   gonna have it slanted or curved & add a animation for the 
   transition-->
-  <button class="light-dark_bt" id="light">
-    Dark / Light
+  <button class="light-dark_bt" id="light" on:click={toggleTheme}>
+    {darkMode ? "Light Mode" : "Dark Mode"}
   </button>
 </light-dark>
 

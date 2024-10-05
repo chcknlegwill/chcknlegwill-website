@@ -1,7 +1,7 @@
 ---
 title: Windows, Linux & Mac 
 date: "2024-06-05"
-lastModified: "2024-9-30"
+lastModified: "2024-10-01"
 description: "My opinions about the three main desktop operating systems."
 ---
 
@@ -14,16 +14,16 @@ Biggest of all the other operating systems. Windows is easy-to-use and it has th
 
 After using windows for a number of years I started to explore the world of linux as I was getting more and more into software. One big part about linux is the terminal. I absolutely love the terminal for linux, it feels as though you are interacting with the core parts of the operating system at lower level than just clicking through some gui. I especially like how there are shells like zsh, fish & addons like oh-my-fish/zsh (zsh:theme -> dst is the best) to make using the terminal an absolute breeze with things like autocomplete (absolute magic to me). 
 
-The different distros that are created & maintained by different communities is one of the best & most unique things that I love about linux, the one's that I have the most time with are:
+Not only are the tools very nice to have such as the terminal - the loads different distros that are created & maintained by different communities is one of the best & most unique things that I love about linux, the one's that I have the most time with & are some of my favourite are:
 - [Ubuntu](https://ubuntu.com/) (best for daily-driving but not as interesting as the others).
 - [Kali linux](https://www.kali.org/) (1337 hackerman).
 - [Parrot OS](https://parrotsec.org/) (1337 hackerman but not as good autocompletion in terminal).
 
-- [Arch linux](https://archlinux.org/) (lots of customisation & lots to get into but can be intimidating for beginers). 
+- [Arch linux](https://archlinux.org/) (lots of customisation & lots to get into but can be intimidating for beginers - my main os for now, windows is primarily for gaming). 
   - [Garuda linux](https://garudalinux.org/) (runs on arch but very cool & easier to install than arch).
   - [Manjaro linux](https://manjaro.org/) (What garuda was before garuda came around - an easier way to install a more fleshed-out arch-based distro).
 
-The biggest downside (besides a few security issues / sketchy updates due to the nature of open-source - although [even windows isn't invulnerable to that haha](https://www.bbc.co.uk/news/articles/cpe3zgznwjno)) is that it does not have support for Microsoft Office stuff - especially things like Onedrive & Office365 which make it a pain because these are used by LOTS of institutions and businesses which means people must use Windows or a vastly more expensive computer just for the privallage of using Onedrive which is very annoying but understandable to keep their operating system market share for windows & keep that sweet, sweet revenue incoming baby!!! This wouldn't annoy me too much but the fact that you can use Onedrive & Office365 on Mac - which uses the same terminal (sadly not the same kernel: [UNIX](https://en.wikipedia.org/wiki/Linux)(Linux) & [XNU](https://en.wikipedia.org/wiki/XNU)(Apple)), so there is support for it but just not available unless you pay Apple's hefty price for one of their laptops.
+The biggest downside (besides a few security issues / sketchy updates due to the nature of open-source - although [even windows isn't invulnerable to that.](https://www.bbc.co.uk/news/articles/cpe3zgznwjno)) is that it does not have support for Microsoft Office stuff - especially things like Onedrive & Office365 which make it a pain because these are used by LOTS of institutions and businesses which means people must use Windows or a vastly more expensive computer just for the privallage of using Onedrive which is very annoying but understandable to keep their operating system market share for windows & keep that sweet, sweet revenue incoming baby!!! This wouldn't annoy me too much but the fact that you can use Onedrive & Office365 on Mac - which uses the same terminal (sadly not the same kernel: [UNIX](https://en.wikipedia.org/wiki/Linux)(Linux) & [XNU](https://en.wikipedia.org/wiki/XNU)(Apple)), so there is support for it but just not available unless you pay Apple's hefty price for one of their laptops.
 
 ## MacOS 
 

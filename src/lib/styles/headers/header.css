@@ -6,6 +6,10 @@
   scrollbar-width: none;
 }
 
+p {
+  font-size: 14pt;
+}
+
 .nav-txt {
   margin: 0;
 }
@@ -47,7 +51,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3%;
+  margin: 1.8%;
 }
 
 
@@ -60,7 +64,6 @@ nav {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #3c3836;
   width: 100%;
 }
 
@@ -89,7 +92,6 @@ a {
 .nav-btn {
     position: relative;
     text-decoration: none;
-    color: #ebdbb2;
     transition: color 0.3s ease;
 }
 
@@ -137,15 +139,56 @@ nav_dl-btn {
   z-index: 100;
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-self: flex-end;
-  background-color: #3c3836;
-  width: 100%;
-  margin-left: 100vh;
+  justify-content: flex-end;
 }
 
 
-.light-dark_bt {
-  display: flex;
-  width: 80%;
+body {
+  background-color: #3c3836;
+}
+
+ .light-dark_bt {
+    display: flex;
+  }
+  body.light {
+    background-color: #f0e7d8;
+    color: #3c3836;
+  }
+
+
+:root {
+  --background-color: #3c3836;
+  --text-color: #ebdbb2;
+  --title-color: #d65d0e; /* example title color for light mode */
+  transition: background-color 0.1s, color0.1s;
+}
+
+body.light {
+  --background-color: #f0e7d8;
+  --text-color: #615644;
+  /* --title-color: #fabd2f;  example title color for dark mode */
+  --title-color: #cc241d;
+  transition: background-color 0.1s, color0.1s;
+
+}
+
+  body nav {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.1s, color0.1s;
+}
+
+h1.title {
+  color: var(--title-color);
+  transition: color 0.3s ease;
+}
+
+a.nav-btn, a.nav-txt {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.bruh, p {
+  color: var(--text-color);
+  transition: color 0.3s ease;
 }
