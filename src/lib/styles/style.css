@@ -71,9 +71,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
-    margin: 3%;
-    
 }
 
 .header {
@@ -93,7 +90,7 @@ hr.solid {
     width: 80%;
 }
 .title {
-    color: #cc241d;
+    color: #cc221d;
     font-weight: 600;
     letter-spacing: 2px;
     border: #ebdbb2 solid 1px;
@@ -171,5 +168,4 @@ article a:hover  {
     color: #959720;
     text-decoration: underline;
 }
-
 

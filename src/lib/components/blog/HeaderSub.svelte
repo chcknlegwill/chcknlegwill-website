@@ -1,9 +1,23 @@
-<script lang="ts">
+<script>
 import githubImg from "../../assets/github.png";
 
 import { page } from "$app/stores"
 $: url = $page.url.pathname
 
+//import Button from "./buttons/light-btn.svelte"
+let darkMode = true;
+
+function toggleTheme() {
+  darkMode = !darkMode;
+  if (darkMode) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+
+  } else {
+    document.body.classList.add("light")
+    document.body.classList.remove("dark")
+  }
+}
 </script>
 
 <header>
@@ -14,7 +28,7 @@ $: url = $page.url.pathname
             </a>
         </div>
         <div class="title-container">
-          <a href="/">
+          <a href="/blog">
               <div class=bruh>
                <h1 class="title">Chcknlegwill</h1>
               </div>
@@ -29,11 +43,11 @@ $: url = $page.url.pathname
     </div>
 
 </header>
-    
+
 <nav> 
-<div class="nav" >
-  <div class="bruh">
-    <a href="/" class="nav-btn" class:active={url === "/"}>
+  <div class="nav" >
+    <div class="bruh">
+      <a href="/" class="nav-btn" class:active={url === "/"}>
       <p class="nav-txt">Home</p>
     </a>
     <a href="/blog" class="nav-btn" class:active={url === "/blog"}>
@@ -45,13 +59,24 @@ $: url = $page.url.pathname
     <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
       <p class="nav-txt">Projects</p>
     </a>
-   </div>
   </div>
-</nav>
 
+<nav_dl-btn>
+
+<light-dark>
+  <!--Get logic working here l8r on-->
+  <!--gonna add a wrap to get the butts added together 
+  gonna have it slanted or curved & add a animation for the 
+  transition-->
+  <button class="light-dark_bt" id="light" on:click={toggleTheme}>
+    {darkMode ? "Light Mode" : "Dark Mode"}
+  </button>
+</light-dark>
+
+</nav_dl-btn>
+</nav> 
 <style lang="scss">
+
+
 @import "../../styles/headers/header.css";
-
-
-
 </style>

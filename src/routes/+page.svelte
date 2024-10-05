@@ -1,4 +1,5 @@
-<script lang="ts">
+<script>
+  // @ts-ignore (works fine for me...)
   import Header from '$lib/components/header.svelte';
   import Time, { svelteTime } from "svelte-time";
   

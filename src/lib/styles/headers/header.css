@@ -6,6 +6,10 @@
   scrollbar-width: none;
 }
 
+p {
+  font-size: 14pt;
+}
+
 .nav-txt {
   margin: 0;
 }
@@ -47,7 +51,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3%;
+  margin: 1.8%;
 }
 
 
@@ -60,7 +64,6 @@ nav {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #3c3836;
   width: 100%;
 }
 
@@ -89,7 +92,6 @@ a {
 .nav-btn {
     position: relative;
     text-decoration: none;
-    color: #ebdbb2;
     transition: color 0.3s ease;
 }
 
@@ -139,69 +141,41 @@ nav_dl-btn {
   width: 100%;
   justify-content: flex-end;
 }
+
+
 body {
   background-color: #3c3836;
 }
 
-
-body.light {
-  color:#f0e7d8 ;
-}
-
-
-body.dark-mode .nav_dl-btn {
-  background-color: #ddd;
-  color: #333;
-}
-
-
  .light-dark_bt {
     display: flex;
   }
-
-  body {
-    background-color: #3c3836;
-    transition: background-color 0.3s ease;
-  }
-
   body.light {
     background-color: #f0e7d8;
     color: #3c3836;
   }
 
-  body.dark {
-    background-color: #3c3836;
-    color: #f0e7d8;
-  }
 
-  body.light .nav {
-    background-color: #f0e7d8;
-  }
-
-  body.dark .nav {
-    background-color: #3c3836;
-  }
 :root {
-  --background-color: #f0e7d8;
-  --text-color: #3c3836;
-  --title-color: #d65d0e; /* example title color for light mode */
-}
-
-body.dark {
   --background-color: #3c3836;
-  --text-color: #f0e7d8;
-  --title-color: #fabd2f; /* example title color for dark mode */
+  --text-color: #ebdbb2;
+  --title-color: #d65d0e; /* example title color for light mode */
+  transition: background-color 0.1s, color0.1s;
 }
 
+body.light {
+  --background-color: #f0e7d8;
+  --text-color: #615644;
+  /* --title-color: #fabd2f;  example title color for dark mode */
+  --title-color: #cc241d;
+  transition: background-color 0.1s, color0.1s;
 
+}
 
-
-
-
-  body {
+  body nav {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.1s, color0.1s;
 }
 
 h1.title {
@@ -210,6 +184,11 @@ h1.title {
 }
 
 a.nav-btn, a.nav-txt {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.bruh, p {
   color: var(--text-color);
   transition: color 0.3s ease;
 }

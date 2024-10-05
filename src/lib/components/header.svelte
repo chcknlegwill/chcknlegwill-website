@@ -1,12 +1,12 @@
-<script lang="ts">
+<script>
 import githubImg from "../assets/github.png";
 
 import { page } from "$app/stores"
-    import { calcKoverI } from "three/examples/jsm/curves/NURBSUtils.js";
+import HeaderSub from "./blog/HeaderSub.svelte";
 $: url = $page.url.pathname
 
 //import Button from "./buttons/light-btn.svelte"
-let darkMode = false;
+let darkMode = true;
 
 function toggleTheme() {
   darkMode = !darkMode;
