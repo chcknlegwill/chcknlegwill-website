@@ -65,10 +65,6 @@ function toggleTheme() {
 <nav_dl-btn>
 
 <light-dark>
-  <!--Get logic working here l8r on-->
-  <!--gonna add a wrap to get the butts added together 
-  gonna have it slanted or curved & add a animation for the 
-  transition-->
   <button class="light-dark_bt" id="light" on:click={toggleTheme}>
     {darkMode ? "Light Mode" : "Dark Mode"}
   </button>

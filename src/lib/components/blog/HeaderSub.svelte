@@ -76,7 +76,6 @@ function toggleTheme() {
 </nav_dl-btn>
 </nav> 
 <style lang="scss">
-
-
 @import "../../styles/headers/header.css";
+
 </style>

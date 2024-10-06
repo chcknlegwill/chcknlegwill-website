@@ -68,7 +68,7 @@
   /*lang="scss" -> this enables the use of sass*/
 
   
-  /* has independant styling for buttons as they 
+  /* has independent styling for buttons as they 
   are different as they have specific sizes for the content
   - on the main page they are only one word so I need them big*/
     @import "../lib/styles/blog/blog.css";
@@ -91,6 +91,9 @@
     
     a {
       color: rgb(85, 165, 85);
+    }
+    a {
+      color: black;
     }
     
 </style>
