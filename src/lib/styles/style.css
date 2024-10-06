@@ -215,7 +215,8 @@ body.dark li {
 body.dark {
   --background-color: #3c3836;
   --text-color: #ebdbb2;
-  --title-color: #d65d0e; /* example title color for light mode */
+  /* --title-color: #d65d0e; example title color for light mode */
+  --title-color: #cc241d;
   transition: background-color 0.1s, color0.1s;
 }
 
