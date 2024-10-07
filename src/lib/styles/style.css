@@ -174,20 +174,7 @@ article a:hover  {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Below is for light/dark mode*/
 
 body {
   background-color: #3c3836;
@@ -227,6 +214,16 @@ body.light {
   --title-color: #cc241d;
   transition: background-color 0.1s, color0.1s;
 
+}
+body.light .title {
+    border: #615644 solid 1px;
+}
+body.light .header {
+    border-bottom: #615644 solid 2px;
+}
+body.light .nav {
+    width: 80%;
+    border-bottom: #615644 solid 2px;
 }
 
 nav {
