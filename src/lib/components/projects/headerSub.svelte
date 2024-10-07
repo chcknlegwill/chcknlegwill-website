@@ -1,9 +1,50 @@
-<script lang="ts">
-import githubImg from "../../assets/github.png";
+<script>
+  import github_dark from "../../assets/github_dark.png";
+  import github_light from "../../assets/github_light.png";
 
-import { page } from "$app/stores"
-$: url = $page.url.pathname
+  const light = github_light;
+  const dark = github_dark;
 
+  let darkMode = true;
+  let githubImg = dark;
+
+  import { page } from "$app/stores";
+  $: url = $page.url.pathname;
+
+  // Function to toggle theme and update the image
+  function toggleTheme() {
+    darkMode = !darkMode;
+
+    if (darkMode) {
+      githubImg = dark;
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    } else {
+      githubImg = light;
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
+    }
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('darkMode', darkMode);
+    }
+  }
+
+  //gets the light or dark mode from localstorage as defined
+  //before with .setItem
+  if (typeof window !== 'undefined') {
+  const savedMode = localStorage.getItem('darkMode');
+  darkMode = savedMode === 'true' ? true : false;
+  githubImg = darkMode ? dark : light;
+
+  if (darkMode) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  } else {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+  }
+}
 </script>
 
 <header>
