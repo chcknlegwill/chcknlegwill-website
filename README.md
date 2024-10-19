@@ -1,2 +1,8 @@
-# Personal site
-## [chcknlegwill.com](https://chcknlegwill.com)
+```txt
+npm install
+npm run dev
+```
+
+```txt
+npm run deploy
+```
