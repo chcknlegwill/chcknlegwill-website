@@ -1,6 +1,8 @@
 <script>
-import github_dark from "../assets/github_dark.png";
+  import github_dark from "../assets/github_dark.png";
   import github_light from "../assets/github_light.png";
+  
+  //importing react libraries for the light/dark button
 
   const light = github_light;
   const dark = github_dark;
@@ -11,9 +13,10 @@ import github_dark from "../assets/github_dark.png";
   import { page } from "$app/stores";
   $: url = $page.url.pathname;
 
+
   // Function to toggle theme and update the image
   function toggleTheme() {
-    darkMode = !darkMode;
+    darkMode = !darkMode; //need to change the default colourscheme (from dark to light)
 
     if (darkMode) {
       githubImg = dark;
@@ -26,6 +29,7 @@ import github_dark from "../assets/github_dark.png";
     }
 
     if (typeof window !== 'undefined') {
+      // @ts-ignore works fine so ignore this error - check this in the future though
       localStorage.setItem('darkMode', darkMode);
     }
   }
