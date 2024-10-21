@@ -3,6 +3,7 @@
     const { title, date, Content } = data;
     //above is to import data from .md files
 
+    // @ts-ignore
     import HeaderBlogSub from '$lib/components/blog/HeaderSub.svelte';
     import Time, { svelteTime } from "svelte-time";
 

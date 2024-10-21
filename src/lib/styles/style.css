@@ -145,6 +145,7 @@ hr.solid {
     border: 0px solid #cc241d;
     border-bottom: 5px solid #d5c4a1;
     border-radius: 6px;
+    transition: all;
     -webkit-transition: border 100ms ease-in-out;
 }
 .button:hover {
@@ -245,4 +246,17 @@ a.nav-btn, a.nav-txt {
 .bruh, p {
   color: var(--text-color);
   transition: color 0.3s ease;
+}
+
+
+#img-left-txt-right {
+    display: flex; 
+    gap: 2%;
+}
+
+#no-margin {
+    margin: 0;
+}
+#img2 {
+    width: 700%;
 }
