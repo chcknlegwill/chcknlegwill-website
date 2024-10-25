@@ -1,9 +1,7 @@
   /*
 font in /images
 using the font that I use for developing
-as I think its a very good font (and I like ligatures)
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 300 to 700
+as I think its a very good font (and I like ligatures).
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
