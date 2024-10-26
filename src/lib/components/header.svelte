@@ -13,46 +13,42 @@
   import { page } from "$app/stores";
   $: url = $page.url.pathname;
 
-
-// Function to toggle theme and update the image
-  function toggleTheme() {
-    darkMode = !darkMode; //need to change the default colourscheme (from dark to light)
-
-    if (darkMode) {
-      githubImg = dark;
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
-    } else {
-      githubImg = light;
-      document.body.classList.add("light");
-      document.body.classList.remove("dark");
-    }
-
-    if (typeof window !== "undefined") {
-      // @ts-ignore works fine so ignore this error - check this in the future though
-      localStorage.setItem("darkMode", darkMode);
-    }
-  }
-
-  if (typeof window !== "undefined") {
-    darkMode = localStorage.getItem("darkMode") === "true";
-    githubImg = darkMode ? dark : light;
-  }
-  //gets the light or dark mode from localstorage as defined
-  //before with .setItem
-  if (typeof window !== "undefined") {
+//gets the light or dark mode from localstorage as defined
+//before with .setItem
+if (typeof window !== "undefined") {
   const savedMode = localStorage.getItem('darkMode');
   darkMode = savedMode === 'true' ? true : false;
   githubImg = darkMode ? dark : light;
 
   if (darkMode) {
-    document.body.classList.add("dark");
-    document.body.classList.remove("light");
-  } else {
-    document.body.classList.add("light");
-    document.body.classList.remove("dark");
-  }
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+    } else {
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+    }
+    
+    // @ts-ignore
+    localStorage.setItem('darkMode', darkMode);
 }
+
+function toggleTheme() {
+    darkMode = !darkMode;
+    githubImg = darkMode ? dark : light;
+    if (darkMode) {
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+    } else {
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+    }
+    
+    if (typeof window !== 'undefined') {
+        // @ts-ignore
+        localStorage.setItem('darkMode', darkMode);
+    }
+}
+
 console.log(darkMode);
 
 </script>
