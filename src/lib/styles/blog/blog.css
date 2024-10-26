@@ -120,11 +120,6 @@ article {
     width: 80%;
 }
 
-hr {
-    border: solid #ebdbb2 1px; 
-    width: 100%;
-}
-
 .title-blog {
     color: #cc241d;
 }
@@ -137,6 +132,7 @@ h2 {
     color: #d79921;
     text-decoration: underline 3px;
 }
+
 
 /*Styling for blog (for pics & stuff in blogs
 is in the style.css file (main one) still need to be

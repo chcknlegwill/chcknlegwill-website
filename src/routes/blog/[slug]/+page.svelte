@@ -1,6 +1,6 @@
 <script>
 	export let data;
-    const { title, date, Content } = data;
+    const { title, date, lastModified, Content } = data;
     //above is to import data from .md files
 
     // @ts-ignore
@@ -19,7 +19,8 @@
 <div class="article-container">
     <article>
     <h1 class="title-blog">{title}</h1>
-    <p>Published: <Time timestamp="{date}"></Time> </p>
+    <p class="little-margin">Published: <Time timestamp="{date}"></Time> </p>
+    <p>Last edited: <Time timestamp="{lastModified}"></Time> </p>
     <hr>
     <Content />
 </article>

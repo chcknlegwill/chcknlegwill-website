@@ -87,11 +87,6 @@ a:hover {
     /*This is above the nav bar */
 }
 
-hr.solid {
-    color:#b2a687; 
-    background-color: #b2a687;
-    width: 80%;
-}
 .title {
     color: #cc221d;
     font-weight: 600;
@@ -245,6 +240,18 @@ a.nav-btn, a.nav-txt {
   color: var(--text-color);
   transition: color 0.3s ease;
 }
+
+hr.dark {
+    color:#b2a687; 
+    background-color: #b2a687;
+    width: 80%;
+}
+hr.light {
+    color: #3c3836;
+    background-color: #3c3836;
+    width: 80%;
+}
+
 
 
 #img-left-txt-right {
