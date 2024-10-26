@@ -168,7 +168,6 @@ article a:hover  {
     text-decoration: underline;
 }
 
-/*Below is for light/dark mode*/
 
 body {
   background-color: #3c3836;
@@ -196,7 +195,6 @@ body.dark li {
 body.dark {
   --background-color: #3c3836;
   --text-color: #ebdbb2;
-  /* --title-color: #d65d0e; example title color for light mode */
   --title-color: #cc241d;
   transition: background-color 0.1s, color0.1s;
 }
@@ -204,7 +202,6 @@ body.dark {
 body.light {
   --background-color: #f0e7d8;
   --text-color: #615644;
-  /* --title-color: #fabd2f;  example title color for dark mode */
   --title-color: #cc241d;
   transition: background-color 0.1s, color0.1s;
 

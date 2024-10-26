@@ -14,7 +14,7 @@
   $: url = $page.url.pathname;
 
 
-  // Function to toggle theme and update the image
+// Function to toggle theme and update the image
   function toggleTheme() {
     darkMode = !darkMode; //need to change the default colourscheme (from dark to light)
 
@@ -28,15 +28,19 @@
       document.body.classList.remove("dark");
     }
 
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       // @ts-ignore works fine so ignore this error - check this in the future though
-      localStorage.setItem('darkMode', darkMode);
+      localStorage.setItem("darkMode", darkMode);
     }
   }
 
+  if (typeof window !== "undefined") {
+    darkMode = localStorage.getItem("darkMode") === "true";
+    githubImg = darkMode ? dark : light;
+  }
   //gets the light or dark mode from localstorage as defined
   //before with .setItem
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
   const savedMode = localStorage.getItem('darkMode');
   darkMode = savedMode === 'true' ? true : false;
   githubImg = darkMode ? dark : light;
@@ -49,6 +53,8 @@
     document.body.classList.remove("dark");
   }
 }
+console.log(darkMode);
+
 </script>
 
 <header>
@@ -92,7 +98,7 @@
 
     <nav_dl-btn>
       <light-dark>
-        <button class="light-dark_bt" id="light" on:click={toggleTheme}>
+        <button on:click={toggleTheme}> <!--- improve styling on this. -->
           {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
       </light-dark>
