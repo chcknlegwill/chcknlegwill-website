@@ -2,6 +2,11 @@
   import github_dark from "../assets/github_dark.png";
   import github_light from "../assets/github_light.png";
   
+  import { onMount } from "svelte";
+  import { writable } from "svelte/store";
+
+  export const darkModeStore = writable(true);
+
   //importing react libraries for the light/dark button
 
   const light = github_light;
@@ -13,28 +18,40 @@
   import { page } from "$app/stores";
   $: url = $page.url.pathname;
 
-//gets the light or dark mode from localstorage as defined
-//before with .setItem
-if (typeof window !== "undefined") {
-  const savedMode = localStorage.getItem('darkMode');
-  darkMode = savedMode === 'true' ? true : false;
-  githubImg = darkMode ? dark : light;
+//need to re-do the light/dark btn as it's causing some issues.
 
-  if (darkMode) {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-    } else {
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-    }
+  onMount(() => {
+    // Set dark mode immediately
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
     
-    // @ts-ignore
-    localStorage.setItem('darkMode', darkMode);
-}
+    // Then check localStorage
+    if (typeof window !== 'undefined') {
+        const storedMode = localStorage.getItem('darkMode');
+        if (storedMode !== null) {
+            darkMode = storedMode === 'true';
+            darkModeStore.set(darkMode);
+            githubImg = darkMode ? dark : light;
+            
+            if (darkMode) {
+                document.body.classList.add("dark");
+                document.body.classList.remove("light");
+            } else {
+                document.body.classList.add("light");
+                document.body.classList.remove("dark");
+            }
+        } else {
+            // If no stored preference, store our default dark mode
+            localStorage.setItem('darkMode', 'true');
+        }
+    }
+});
 
 function toggleTheme() {
     darkMode = !darkMode;
+    darkModeStore.set(darkMode);
     githubImg = darkMode ? dark : light;
+    
     if (darkMode) {
         document.body.classList.add("dark");
         document.body.classList.remove("light");
@@ -44,12 +61,10 @@ function toggleTheme() {
     }
     
     if (typeof window !== 'undefined') {
-        // @ts-ignore
         localStorage.setItem('darkMode', darkMode);
     }
 }
 
-console.log(darkMode);
 
 </script>
 
