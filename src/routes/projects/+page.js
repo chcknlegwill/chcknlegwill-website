@@ -1,0 +1,1 @@
+//this has to return posts like in the other +page.js file 
