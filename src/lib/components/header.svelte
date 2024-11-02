@@ -61,6 +61,7 @@ function toggleTheme() {
     }
     
     if (typeof window !== 'undefined') {
+        // @ts-ignore -- remember to check this!!!!
         localStorage.setItem('darkMode', darkMode);
     }
 }
@@ -117,6 +118,6 @@ function toggleTheme() {
   </div>
 </nav>
 
-<style lang="scss">
+<style>
   @import "../styles/headers/header.css";
 </style>

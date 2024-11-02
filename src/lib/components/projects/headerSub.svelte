@@ -90,7 +90,7 @@
   </div>
 </nav>
 
-<style lang="scss">
+<style>
 @import "../../styles/headers/header.css";
 
 </style>

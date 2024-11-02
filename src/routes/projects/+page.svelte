@@ -1,5 +1,10 @@
 <script>
     import Header from "$lib/components/header.svelte"
+    import Time, { svelteTime } from  "svelte-time";
+
+
+    export let data;
+    const { title, date, lastModified, Content } = data;
 
 </script>
 
@@ -14,6 +19,10 @@
         <a href="projects/rotating_cube">
             <button class="button">rotating cube</button>
         </a>
+        <p>Projects page under development so forgive
+            the errors. 11/2/24 
+        </p>
+        <p>{title}</p>
     </div> 
 </main>
 
