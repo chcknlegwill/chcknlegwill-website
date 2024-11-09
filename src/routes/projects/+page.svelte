@@ -1,14 +1,11 @@
 <script lang="ts">
-    import Header from "$lib/components/header.svelte"
-    import Time, { svelteTime } from  "svelte-time";
-    import { fade } from "svelte/transition";
+  import HeaderBlog from "$lib/components/header.svelte"
+  export let data;
 
+  import Time, { svelteTime } from "svelte-time";
+  import { fade } from 'svelte/transition';
 
-    export let data;
-    const { title, date, lastModified, Content } = data;
-
-
-      let showDesc = new Map();
+  let showDesc = new Map();
 
 function showDescription(postId: string) {
   showDesc.set(postId, true);
@@ -19,16 +16,16 @@ function hideDescription(postId: string) {
   showDesc.set(postId, false);
   showDesc = showDesc;
 }
+
 </script>
 
 <svelte:head>
-    <title>Projects</title>
+  <title>Blog</title>
 </svelte:head>
 
-
-<Header/>
+<HeaderBlog />
 <main class="main">
-    <!-- add a filter so you can change to 
+  <!-- add a filter so you can change to 
    have the oldest or the newest first -->
   <div class="button-container"
  
@@ -63,16 +60,24 @@ function hideDescription(postId: string) {
 
       </a>
     {/each}
-  </div> 
+  </div>
 </main>
-
+<!--
+{#each data.posts as post}
+            <a href={post.path}>
+                {post.meta.title}
+            </a>
+       </li> 
+    {/each}
+-->
 
 <style lang="scss">
-    @import "../../lib/styles/blog/blog.css";
+  @import "$lib/styles/blog/blog.css";
 
-    button {
-        min-width: 225px;
-        height: auto;
-        font-size: 38px;
-    }
+  .button-blog {
+    overflow: hidden;
+  }
+.blog-description {
+    color: #665c54;
+}
 </style>
