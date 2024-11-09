@@ -1,16 +1,15 @@
-import { compile } from 'mdsvex';
-
 // @ts-ignore
 export async function load({ params }) {
-    const post = await import(`../${params.slug}.md`); // Adjust path as needed
+    const post = await import(`../${params.slug}.md`);
     const { title, date, lastModified } = post.metadata;
-    const content = post.default;    
-
+    const Content = post.default;
+    //need to get description here but the date and title
+    //will do for now
 
     return {
-        content,
+        Content,
         title,
         date,
-        lastModified 
+        lastModified
     };
 }

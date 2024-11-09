@@ -1,21 +1,24 @@
 <script>
-	export let data;
+	
+
+    // @ts-ignore
+    import Header from '$lib/components/blog/HeaderSub.svelte';
+    import Time, { svelteTime } from "svelte-time";
+
+    
+    //add func to add #links to all <a> tags
+    export let data;
     const { title, date, lastModified, Content } = data;
     //above is to import data from .md files
 
-    // @ts-ignore
-    import HeaderBlogSub from '$lib/components/blog/HeaderSub.svelte';
-    import Time, { svelteTime } from "svelte-time";
-
-    //add func to add #links to all <a> tags
-
+    //build issues mean I've gotta rethink how this renders with mdsvex
 </script>
 
 <svelte:head>
     <title>Blog - {title}</title>
 </svelte:head>
 
-<HeaderBlogSub/>
+<Header/>
 <div class="article-container">
     <article>
     <h1 class="title-blog">{title}</h1>
