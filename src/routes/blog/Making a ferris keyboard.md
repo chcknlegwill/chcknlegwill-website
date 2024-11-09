@@ -1,5 +1,5 @@
 ---
-title: "Making a custom keyboard"
+title: "Making a custom keyboard."
 date: "2024-10-15"
 lastModified: "2024-11-02"
 description: "Making a keyboard from scratch - the ferris keyboard."

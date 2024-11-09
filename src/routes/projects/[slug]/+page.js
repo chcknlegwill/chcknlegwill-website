@@ -1,17 +1,15 @@
-import { error } from "@sveltejs/kit";
-
 // @ts-ignore
-export const load = async ({ params }) => {
-  try {
-    const post = await import (`../../projects/${params.slug}.md`)
+export async function load({ params }) {
+    const post = await import(`../${params.slug}.md`);
+    const { title, date, lastModified } = post.metadata;
+    const Content = post.default;
+    //need to get description here but the date and title
+    //will do for now
 
     return {
-      Content: post.default,
-      title: post.metadata.title,
-      date: post.metadata.date,
-      lastModified: post.metadata.lastModified
+        Content,
+        title,
+        date,
+        lastModified
     };
-  } catch (err) {
-    throw error(404, `Couldn't find project ${params.slug}`);
-  }
 }

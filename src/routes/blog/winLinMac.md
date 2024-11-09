@@ -1,5 +1,5 @@
 ---
-title: Windows, Linux & Mac 
+title: Windows, Linux & Mac. 
 date: "2024-06-05"
 lastModified: "2024-10-01"
 description: "My opinions about the three main desktop operating systems."

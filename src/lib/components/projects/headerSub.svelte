@@ -2,13 +2,13 @@
   import github_dark from "../../assets/github_dark.png";
   import github_light from "../../assets/github_light.png";
 
+  import { onMount } from "svelte" ;
+  import { page } from "$app/stores";
+
   const light = github_light;
   const dark = github_dark;
-
   let darkMode = true;
   let githubImg = dark;
-
-  import { page } from "$app/stores";
   $: url = $page.url.pathname;
 
   // Function to toggle theme and update the image
@@ -26,6 +26,7 @@
     }
 
     if (typeof window !== 'undefined') {
+      // @ts-ignore
       localStorage.setItem('darkMode', darkMode);
     }
   }
@@ -45,6 +46,11 @@
     document.body.classList.remove("dark");
   }
 }
+
+//change default light or dark mode depending on what time or day it is
+
+
+
 </script>
 
 <header>

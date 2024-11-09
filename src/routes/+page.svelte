@@ -44,8 +44,8 @@
   <div class="rand-container">
     <div class="spacer"></div>    
     <div class="desc">
-      <p>Random article from <a href="/blog" id="link">>blog</a> below:</p>
-      <p><a id="link" href="/blog/{randomPost.slug}">Read full post here</a></p>
+      <p>Random article from <a href="/blog" id="link">>blog</a> or <a href="/projects" id="link">>projects</a> below:</p>
+      <!-- p><a id="link" href="$page.url.pathname">Read full post here</a></p> -->
     </div>
 
       <hr>

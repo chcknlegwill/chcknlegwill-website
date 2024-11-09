@@ -1,10 +1,10 @@
 
 
-import { fetchMarkdownPosts } from '$lib/utils';
+import { fetchMarkdownPostsProjects } from '$lib/utils';
 import { json } from '@sveltejs/kit';
 
 export const GET = async () => {
-	const allPosts = await fetchMarkdownPosts();
+	const allPosts = await fetchMarkdownPostsProjects();
 
 	const sortedPosts = allPosts.sort((a, b) => {
 		// @ts-ignore

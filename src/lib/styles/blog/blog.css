@@ -133,6 +133,15 @@ h2 {
     text-decoration: underline 3px;
 }
 
+hr{
+    color:#ebdbb2; 
+    background-color: #ebdbb2;
+}
+hr.light {
+    color: #3c3836;
+    background-color: #3c3836;
+    width: 80%;
+}
 
 /*Styling for blog (for pics & stuff in blogs
 is in the style.css file (main one) still need to be
