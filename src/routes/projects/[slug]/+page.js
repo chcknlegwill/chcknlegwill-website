@@ -1,17 +1,16 @@
-import { error } from "@sveltejs/kit";
+import { compile } from 'mdsvex';
 
 // @ts-ignore
-export const load = async ({ params }) => {
-  try {
-    const post = await import (`../../projects/${params.slug}.md`)
+export async function load({ params }) {
+    const post = await import(`../${params.slug}.md`); // Adjust path as needed
+    const { title, date, lastModified } = post.metadata;
+    const content = post.default;    
+
 
     return {
-      Content: post.default,
-      title: post.metadata.title,
-      date: post.metadata.date,
-      lastModified: post.metadata.lastModified
+        content,
+        title,
+        date,
+        lastModified 
     };
-  } catch (err) {
-    throw error(404, `Couldn't find project ${params.slug}`);
-  }
 }
