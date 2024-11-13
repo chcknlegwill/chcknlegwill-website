@@ -4,6 +4,9 @@ date: "2024-06-05"
 lastModified: "2024-10-01"
 description: "My opinions about the three main desktop operating systems."
 ---
+<script>
+  import img1 from "$lib/assets/blog/winLinMac/2023_Linux_Distributions_Timeline.svg"
+</script>
 
 
 ## Windows
@@ -37,5 +40,5 @@ However, my personal favourite of the three has to be linux.
 
 This is probably because I agree with Linux on a philosophical level with free and open-source software for anyone to examine, download, tinker & learn with as it benefits everyone involved and makes wonderful things like the hundereds of linux distros:   
 <p id="underline"> This image is very long, <a  href="#img1">skip scrolling.</a></p>
-  <img src="/2023_Linux_Distributions_Timeline.svg" alt="Hundreds of Linux distributions timeline" width="100%"/>
+  <img src="{img1}" alt="Hundreds of Linux distributions timeline" width="100%"/>
 <p id="img1">I feel as though this inspires creativity as there are LOADS of distros that you can learn and explore - way more than a single lifetime can cover anyway - especially the much older lower-level ones (going back to the flopy disk with the MCC Interim). I also love Linux because of it's <a href="https://en.wikipedia.org/wiki/Linux"> rich history </a> that is very interestng - released in 1991 & has it's origins in Unix released in 1971. Still used in most servers around the world I think the operating system has a good future - as well as Windows and Apple too, they have two tech giants backing those so I think they'll be okay. Anyway, I love each operating system for it's own advantages, but I just like the way linux is developed as it's centered around lot's of people all collaborating to improve a piece of software which I think is beautiful in it's own right - the shared achievement of a group of people, especially if it's to make your life easier (e.g. fdisk) is very valuable and should be encouraged.</p>

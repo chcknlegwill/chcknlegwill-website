@@ -141,3 +141,8 @@ nav_dl-btn {
   width: 100%;
   justify-content: flex-end;
 }
+
+
+nav_dl-btn button {
+  transition: background-color 0.3s ease, color 0.3 ease;
+}

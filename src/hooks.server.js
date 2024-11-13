@@ -5,8 +5,8 @@
 
 import { writeFile } from 'fs/promises';
 
-import { DataTexture } from 'three';
 import { format } from "date-fns";
+import { FunctionCallNode } from 'three/examples/jsm/nodes/Nodes.js';
 
 /*
 const logEvents = async (message) => {
