@@ -1,7 +1,7 @@
 ---
 title: "Making this site."
 date: "2024-05-30"
-lastModified: "2024-9-30"
+lastModified: "2024-11-25"
 description: "The switch between Node.js & Svelte (Scale isn't an issue atm so this is a purely a starters perspective)."
 ---
 <script>
@@ -19,14 +19,4 @@ I originally used a VPS on Namecheap, and this worked very well for Node & Expre
 
 
 ## Programming the website 
-This project started as a node.js & express.js project. This was because I had some previous experience building a few simple applications for my A-level project using Node & Express.js. I enjoy writing web servers as it has very nice and very abundant documentation as well as the benefit of using plain html, css & javascript which can be more clear to beginers before they jump straight into things like sveltekit with .svelte files which could confuse newcomers - it's very clear to the users which file does what which is very useful whilst learning. I personally prefer sveltekit at the moment because the routing setup is MUCH easier for quick projects rather than writing lots of middleware and TONS of routing functions (at least in my experience) for each route e.g. /, /blog, /about/.../, /projects/... that the user may take can be very time-consuming to write a function for each one. Whereas svletekit does this automatically through how the files are structured:  
-
-<img src="{img1}" alt="code" width="100%"/>
-
-As you can see, the Node & Express.js server on the left has routes that are very declarative - I have had to specify the routes used by the server.js file (lines 20-37). After that I then have to also add for each directory e.g. /blog, /projects another .js file to further route the requests to where they need to go:
-
-<div id="img-left-txt-right"> 
-  <img id="img2" src="{img2}" alt="bruh" width="300%"/>
-
-  <p id="no-margin" width="" >As you can see in the screenshot on the left of blog.js - I have had to write out the specific paths for each file in order for it to be served. This is much different compared to sveltekit as they use a file-based routing system which is much more intuitive and faster than writing the routes themselves.Although this does mean that sveltekit is less flexible than Node / Express.js style routing.</p>
-</div>
+This project started using Node.js & Express.js - this was because I had some previous experience building a few simple applications for my A-level project using Node & Express.js.  
