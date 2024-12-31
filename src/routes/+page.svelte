@@ -31,4 +31,8 @@
       </a>
     </div>
   </div>
+
+  <div class="rand-container">
+    <!-- implement this in the future -->
+  </div>
 </main>
