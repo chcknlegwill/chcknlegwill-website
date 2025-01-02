@@ -1,3 +1,7 @@
+<script>
+  //everything on this file affects ALL pages
+</script>
+
 <svelte:head>
 </svelte:head>
 

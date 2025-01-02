@@ -1,7 +1,14 @@
 <script>
   //import stuff here
+  import Header from "$lib/components/header.svelte";
+  import Test from "$lib/components/test.svelte";
 </script>
 
+<svelte:head>
+  <title>William - personal site</title>
+</svelte:head>
+
+<Header />
 <!-- Main for the main content (for flexbox)-->
 <main>
   <div class="intro">
