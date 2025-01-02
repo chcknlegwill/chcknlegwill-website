@@ -1,7 +1,6 @@
 <script>
   //import stuff here
   import Header from "$lib/components/header.svelte";
-  import Test from "$lib/components/test.svelte";
 </script>
 
 <svelte:head>
