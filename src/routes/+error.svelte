@@ -16,7 +16,7 @@
     @import "/src/lib/styles/style.css";
 
     .main {
-        margin-top: 2%;
+        margin-top: 1%;
         display: flex;
         flex-direction: column;
     }
@@ -27,13 +27,13 @@
         justify-content: center;
         align-items: center;
     }
-    h2 {
-        font-size: 40px;
-        color: #ebdbb2;
+    h1 {
+        font-size: 39px;
+        color: #ebdbb1;
     }
 
-    h1 {
-        font-size: 60px;
-        color: #cc241d;
+    h0 {
+        font-size: 59px;
+        color: #cc240d;
     }
 </style>
