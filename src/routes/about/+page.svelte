@@ -24,5 +24,5 @@
 </main>
 
 <style>
-    @import "../../lib/styles/blog/blog.css";
+
 </style>

@@ -64,34 +64,7 @@
 
 <style lang="scss">
   /*lang="scss" -> this enables the use of sass*/
+  @import "../lib/styles/main.css";
 
-  
-  /* has independent styling for buttons as they 
-  are different as they have specific sizes for the content
-  - on the main page they are only one word so I need them big*/
-    @import "../lib/styles/blog/blog.css";
-    button {
-      min-width: 225px; /*to max length of largest button (projects)*/
-      height: auto;
-      font-size: 38px;
-    }
-
-    /* for the random at the bottom of the page */
-
-    .spacer {
-      margin-top: 100px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    a {
-      color: rgb(85, 165, 85);
-    }
-    a {
-      color: black;
-    }
     
 </style>

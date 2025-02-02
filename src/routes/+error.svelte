@@ -13,7 +13,6 @@
 </main>
 
 <style>
-    @import "/src/lib/styles/style.css";
 
     .main {
         margin-top: 1%;
@@ -32,7 +31,7 @@
         color: #ebdbb1;
     }
 
-    h0 {
+    h2 {
         font-size: 59px;
         color: #cc240d;
     }

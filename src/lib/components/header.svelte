@@ -119,5 +119,4 @@ function toggleTheme() {
 </nav>
 
 <style>
-  @import "../styles/headers/header.css";
 </style>

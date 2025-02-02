@@ -1,0 +1,27 @@
+/*
+Alright, re-doing the ENTIRE CSS
+this is going to be the main file and going to try
+and not make any other files in order to be easier to maintain.
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+* {
+  font-family: 'Fira Code';
+  font-weight: 500;
+}
+
+header, nav {
+  background-color: #282828;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+}
+

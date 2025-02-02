@@ -72,7 +72,6 @@ function hideDescription(postId: string) {
 -->
 
 <style lang="scss">
-  @import "$lib/styles/blog/blog.css";
 
   .button-blog {
     overflow: hidden;

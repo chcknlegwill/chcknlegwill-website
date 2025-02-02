@@ -30,5 +30,4 @@
 </div>  
 
 <style>
-    @import "$lib/styles/blog/blog.css";
 </style>
