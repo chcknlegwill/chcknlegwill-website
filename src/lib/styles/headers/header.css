@@ -98,6 +98,7 @@ a {
 .nav-txt {
     position: relative;
     z-index: 1;
+    color: #ebdbb2;
 }
 
 .nav-btn::after {

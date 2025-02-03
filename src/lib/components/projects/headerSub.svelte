@@ -3,13 +3,13 @@
   import github_light from "../../assets/github_light.png";
 
   import { onMount } from "svelte" ;
-  import { page } from "$app/stores";
+  import { page } from "$app/state"; //page from $app/stores depreciated -> using app/state instead as per the docs
 
   const light = github_light;
   const dark = github_dark;
   let darkMode = true;
   let githubImg = dark;
-  $: url = $page.url.pathname;
+  $: url = page.url.pathname;
 
   // Function to toggle theme and update the image
   function toggleTheme() {

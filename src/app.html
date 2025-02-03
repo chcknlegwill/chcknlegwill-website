@@ -2,7 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+    <link rel="preload" href="/src/lib/styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/lib/styles/style.css"> </noscript>
 		<link rel="icon" href="/favicon.png">
+    <style>
+    .title {
+      color: #cc221d !important; 
+    }
+  </style>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>

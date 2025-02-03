@@ -11,7 +11,7 @@ as I think its a very good font (and I like ligatures).
     font-weight: 500;
 }
 
-a {
+a:not(.title) {
     color: #b8bb26;
 }
 a:hover {
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .title {
-    color: #cc221d;
+    color: #cc221d !important;
     font-weight: 600;
     letter-spacing: 2px;
     border: #ebdbb2 solid 1px;
@@ -148,10 +148,10 @@ a:hover {
 
 /*below is for the /about page's title*/
 .content {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  max-width: 80%;
 }
 
 li {
@@ -160,12 +160,12 @@ li {
 /* end */ 
 
 article a {
-    color: #b8bb26;
-    text-decoration: none; 
+  color: #b8bb26;
+  text-decoration: none; 
 }
 article a:hover  {
-    color: #959720;
-    text-decoration: underline;
+  color: #959720;
+  text-decoration: underline;
 }
 
 
@@ -174,27 +174,27 @@ body {
 }
 
 .light-dark_bt {
-        display: flex;
+  display: flex;
 }
 
 body.light {
-    background-color: #f0e7d8;
-    color: #3c3836;
-  }
+  background-color: #f0e7d8;
+  color: #3c3836;
+}
 
 body.light li {
-    color: #615644;
+  color: #615644;
   transition: background-color 0.1s, color0.1s;
 }
 body.dark li {
-    color: #ebdbb2;
+  color: #ebdbb2;
   transition: background-color 0.1s, color0.1s;
 }
 
 
 body.dark {
   --background-color: #3c3836;
-  --text-color: #ebdbb2;
+  --text-color: #ebdbb2 !important;
   --title-color: #cc241d;
   transition: background-color 0.1s, color0.1s;
 }
@@ -224,7 +224,7 @@ nav {
 }
 
 h1.title {
-  color: var(--title-color);
+  color: var(--title-color) !important;
   transition: color 0.3s ease;
 }
 

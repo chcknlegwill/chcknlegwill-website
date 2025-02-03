@@ -19,9 +19,10 @@ const config = {
 
 	preprocess: [
 		sveltePreprocess(), //sass
-		mdsvex({
+    mdsvex({
 			extensions: [".md"]
-		})
+		}),
+    
 	] 
 };
 

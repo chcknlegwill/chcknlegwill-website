@@ -120,4 +120,9 @@ function toggleTheme() {
 
 <style>
   @import "../styles/headers/header.css";
+  /* add */
+
+  .title {
+    color: #cc221d !important;
+  }
 </style>
