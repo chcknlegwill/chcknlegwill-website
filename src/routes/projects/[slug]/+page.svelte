@@ -12,6 +12,10 @@
     //above is to import data from .md files
 
     //build issues mean I've gotta rethink how this renders with mdsvex
+
+
+
+
 </script>
 
 <svelte:head>
@@ -31,4 +35,5 @@
 
 <style>
     @import "$lib/styles/blog/blog.css";
+    
 </style>

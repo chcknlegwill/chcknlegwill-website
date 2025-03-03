@@ -22,6 +22,9 @@ Get animation for the description - popping up and so fourth.
 
 - Need to redo the title to be larger and description to be hidden
 
+03/03/2025
+Need to get code looking much nicer - maybe gruvbox colourscheme.
+      ^--> do later on
 
 
 
