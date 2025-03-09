@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private/
+Disallow: /cgi-bin/
+Sitemap: https://yourwebsite.com/sitemaps.xml
