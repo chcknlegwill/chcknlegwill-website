@@ -32,8 +32,10 @@
         color: #ebdbb1;
     }
 
+    /*
     h0 {
         font-size: 59px;
         color: #cc240d;
     }
+        */
 </style>
