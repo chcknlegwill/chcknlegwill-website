@@ -1,16 +1,3 @@
 User-agent: *
-Allow: /
-
-# Disallow admin pages
-Disallow: /admin/
-
-# Disallow any URLs with a query string
-Disallow: /*?*
-
-# Allow CSS, JS, and image files
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.png$
-Allow: /*.gif$
+Disallow: 
+Disallow: /cgi-bin/
