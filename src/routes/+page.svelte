@@ -1,7 +1,7 @@
 <script>
   // @ts-ignore (works fine for me...)
   import Header from '$lib/components/header.svelte';
-  import Time, { svelteTime } from "svelte-time";
+  import Time from "svelte-time";
   
   export let data;
   const { randomPost } = data;

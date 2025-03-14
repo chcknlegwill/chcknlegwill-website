@@ -18,7 +18,6 @@
   import { page } from "$app/stores";
   $: url = $page.url.pathname;
 
-//need to re-do the light/dark btn as it's causing some issues.
 
   onMount(() => {
     // Set dark mode immediately
@@ -120,6 +119,7 @@ function toggleTheme() {
 
 <style>
   @import "../styles/headers/header.css";
+
   /* add */
 
   .title {
