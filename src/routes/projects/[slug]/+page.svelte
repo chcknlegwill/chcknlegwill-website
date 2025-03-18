@@ -2,7 +2,7 @@
 	
 
     // @ts-ignore
-    import Header from '$lib/components/blog/HeaderSub.svelte';
+    import Header from '$lib/components/header.svelte';
     import Time, { svelteTime } from "svelte-time";
 
     

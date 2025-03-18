@@ -146,6 +146,20 @@ a:hover {
     border-bottom: solid 5px #cc241d;
 }
 
+/*
+.button-no-extra {
+  text-align: center;
+  background-color: #d5c4a1;
+  border: 0px solid;
+  border-radius: 6px;
+  transition: all;
+}
+.button-no-extra:hover {
+  background-color: #beae8e;
+  cursor: pointer;
+}
+*/
+
 /*below is for the /about page's title*/
 .content {
   display: flex;
