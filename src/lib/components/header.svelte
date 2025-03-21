@@ -108,13 +108,13 @@ function toggleTheme() {
       <a href="/" class="nav-btn" class:active={url === "/"}>
         <p class="nav-txt">Home</p>
       </a>
-      <a href="/blog" class="nav-btn" class:active={url === "/blog"}>
+      <a href="/blog" class="nav-btn" class:active={url === "/blog" || url.includes("blog")}>
         <p class="nav-txt">Blog</p>
       </a>
-      <a href="/about" class="nav-btn" class:active={url === "/about"}>
+      <a href="/about" class="nav-btn" class:active={url === "/about"} > 
         <p class="nav-txt">About</p>
       </a>
-      <a href="/projects" class="nav-btn" class:active={url === "/projects"}>
+      <a href="/projects" class="nav-btn" class:active={url === "/projects" || url.includes("projects")}>
         <p class="nav-txt">Projects</p>
       </a>
     </div>
