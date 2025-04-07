@@ -22,7 +22,7 @@ Not only are the tools very nice to have such as the terminal - the loads differ
 - [Kali linux](https://www.kali.org/) (1337 hackerman).
 - [Parrot OS](https://parrotsec.org/) (1337 hackerman but not as good autocompletion in terminal).
 
-- [Arch linux](https://archlinux.org/) (lots of customisation & lots to get into but can be intimidating for beginers - my main os for now, windows is primarily for gaming). 
+- [Arch linux](https://archlinux.org/)(btw) (lots of customisation & lots to get into but can be intimidating for beginers - my main os for now, windows is primarily for gaming). 
   - [Garuda linux](https://garudalinux.org/) (runs on arch but very cool & easier to install than arch).
   - [Manjaro linux](https://manjaro.org/) (What garuda was before garuda came around - an easier way to install a more fleshed-out arch-based distro).
 
