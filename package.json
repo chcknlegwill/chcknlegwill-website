@@ -11,14 +11,17 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
   },
   "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-cloudflare": "^4.7.2",
     "@sveltejs/adapter-node": "^5.0.1",
-    "@sveltejs/kit": "^2.8.1",
+    "@sveltejs/kit": "^2.20.4",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@types/three": "^0.164.1",
+    "glob": "^11.0.1",
     "mdsvex": "^0.11.2",
     "patch-package": "^8.0.0",
+    "rimraf": "^6.0.1",
     "sass": "^1.75.0",
     "svelte": "^4.2.7",
     "svelte-check": "^3.6.0",
@@ -36,7 +39,7 @@
     "dompurify": "^3.1.7",
     "marked": "^15.0.0",
     "svelte-md": "^0.0.1",
-    "three": "^0.164.1"
+    "three": "^0.175.0"
   },
   "description": "Personal website.",
   "main": "hooks.server.js",
