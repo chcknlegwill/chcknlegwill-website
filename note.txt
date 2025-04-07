@@ -1,0 +1,9 @@
+these are notes for when starting with hugo
+
+
+archetypes -> templates for new content
+content -> markdown files for pages
+layouts -> html templates
+static -> CSS, JS, images
+optional theme folder
+config.toml -> site configuration
