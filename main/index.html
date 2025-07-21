@@ -3,6 +3,60 @@
   <head>
     <title>personal site</title>
   </head>
+  
+<header>
+  <div class="header">
+    <div class="links">
+      <a href="https://github.com/chcknlegwill/" target="_blank">
+        <img class="github" id="github" alt="github logo" src="{githubImg}" />
+      </a>
+    </div>
+
+    <div class="title-container">
+      <a href="/">
+        <div class="bruh">
+          <h1 class="title">Chcknlegwill</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="links">
+      <!-- Placeholder to keep header structure -->
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav">
+    <div class="bruh">
+      <a href="/" class="nav-btn" class:active={url === "/"}>
+        <p class="nav-txt">Home</p>
+      </a>
+      <a href="/blog" class="nav-btn" class:active={url === "/blog" || url.includes("blog")}>
+        <p class="nav-txt">Blog</p>
+      </a>
+      <a href="/about" class="nav-btn" class:active={url === "/about"} > 
+        <p class="nav-txt">About</p>
+      </a>
+      <a href="/projects" class="nav-btn" class:active={url === "/projects" || url.includes("projects")}>
+        <p class="nav-txt">Projects</p>
+      </a>
+    </div>
+
+    <nav_dl-btn>
+      <light-dark>
+        <button class="theme-toggle" on:click={toggleTheme}> 
+          <div class="toggle-container">
+            <img src="{sunVar}" id="sun" class:active={!darkMode} />
+            <img src="{moonVar}" id="moon" class:active={darkMode}/>
+          </div>
+         <!-- add alt to stuff above (in yellow)-->
+          <!-- {darkMode ? {sun} : {moon}} -->
+        </button>
+      </light-dark>
+    </nav_dl-btn>
+  </div>
+</nav>
   <body>
 
     <main class="main">
@@ -62,7 +116,7 @@
   /* has independent styling for buttons as they 
   are different as they have specific sizes for the content
   - on the main page they are only one word so I need them big*/
-    @import "../lib/styles/blog/blog.css";
+  @import "lib/styles/style.css";
     button {
       min-width: 225px; /*to max length of largest button (projects)*/
       height: auto;
