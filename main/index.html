@@ -1,18 +1,11 @@
-<script>
-  // @ts-ignore (works fine for me...)
-  import Header from '$lib/components/header.svelte';
-  import Time from "svelte-time";
-  
-  export let data;
-  const { randomPost } = data;
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>personal site</title>
+  </head>
+  <body>
 
-</script>
-<svelte:head>
-    <title>William - personal website</title>
-</svelte:head>
-
-<Header/>
-<main class="main">
+    <main class="main">
   <div class="intro">
     <p>Hello. Welcome to my site. You can find more about me on the <a href="/about" id="link">>About</a>
     page, read something on the <a href="/blog" id="link" >>blog </a> or -> explore some of my <a href="/projects" id="link" >>projects </a>
@@ -95,3 +88,5 @@
     }
     
 </style>
+  </body>
+</html>
