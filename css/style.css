@@ -1,0 +1,53 @@
+/* GET COLOUR WORKING NEXT !!!!!! */
+:root {
+    --bg-color: #3c3836;
+    --text-color: #ebdbb2;
+    --red: #fb4934;
+    --yellow: #fabd2f;
+    --green: #b8bb26;
+    --border-color: #7c6f64;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-title {
+    color: var(--red);
+    border: 2px solid var(--red);
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 2.5rem;
+    border-radius: 8px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #83a598; /* Purple/Blue underline from image */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+h1, h2 { color: var(--red); text-decoration: underline; }
+a { color: var(--yellow); }
+.green-link { color: var(--green); }
+
+main p {
+    margin-bottom: 1.5rem;
+}

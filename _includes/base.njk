@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1 class="site-title">chcknlegwill</h1>
+        </div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+        </nav>
+        <hr class="nav-divider">
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+</body>
+</html>
