@@ -1,0 +1,19 @@
+[
+      {
+        "title": "about me",
+        "date": "Jan 1, 2025",
+        "url": "/about/",
+        "excerpt": "blah blah blah"
+      },
+      {
+        "title": "first blog",
+        "date": "Jan 1, 2025",
+        "url": "/blog/blog1/",
+        "excerpt": "blog 1"
+      },
+      {
+        "title": "first project",
+        "date": "Jan 1, 2025",
+        "url": "/projects/project1/",
+        "excerpt": "projects 1"
+      }]
