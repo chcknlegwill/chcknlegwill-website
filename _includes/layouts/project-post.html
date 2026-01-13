@@ -1,0 +1,19 @@
+---
+layout: base.html
+---
+<!--^^ gotta include the header for easier navigation (make header sticky like in svelte iteration)-->
+
+
+<div class="project-container">
+  <header class="project-header">
+    <h1>{{ title }} --for project!!!!!</h1>
+    <p class="date">Published: {{ date | postDate }}</p>
+  </header>
+  <hr>
+  <p>I am here and layout (for project) is working!!!!</p>
+  <article class="blog-content">
+    {{ content | safe }}
+  </article>
+</div>
+
+

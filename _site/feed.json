@@ -6,14 +6,26 @@
         "excerpt": "blah blah blah"
       },
       {
-        "title": "first blog",
+        "title": "first!!!",
         "date": "Jan 1, 2025",
-        "url": "/blog/blog1/",
-        "excerpt": "blog 1"
+        "url": "/blog/first-blog/",
+        "excerpt": "Content! content 2 last content"
       },
       {
-        "title": "first project",
-        "date": "Jan 1, 2025",
+        "title": "bruh moment",
+        "date": "Nov 2, 2025",
         "url": "/projects/project1/",
-        "excerpt": "projects 1"
+        "excerpt": "sdsdsds title bruh moment indeed"
+      },
+      {
+        "title": "Projects",
+        "date": "Jan 11, 2026",
+        "url": "/projects/",
+        "excerpt": "My projects bruh moment — Nov 2, 2025"
+      },
+      {
+        "title": "Blog",
+        "date": "Jan 13, 2026",
+        "url": "/blog/",
+        "excerpt": "My blog first!!! — Jan 1, 2025"
       }]

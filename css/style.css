@@ -15,7 +15,7 @@ body.light-mode {
     --fg: #3c3836;
 }
 
-* { font-family: 'Fira Code', monospace; box-sizing: border-box; }
+* { font-family: 'Fira Code' !important;}
 
 body {
     background-color: var(--bg);

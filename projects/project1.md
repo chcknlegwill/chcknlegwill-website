@@ -1,7 +1,10 @@
 ---
-title: "first project"
-date: 2025-01-01
+title: "bruh moment"
+date: 2025-11-02
 ---
+sdsdsds
+
+# title 
 
 
-# projects 1
+## bruh moment indeed
