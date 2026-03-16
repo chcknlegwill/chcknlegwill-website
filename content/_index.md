@@ -1,9 +1,8 @@
 ---
-layout: "base.html"
 title: "Home"
 ---
 
-<p>Hello. Welcome to my site. You can find more about me on the <a href="/about" class="green-link">>About</a> page, read something on the <a href="/blog" class="green-link">>blog</a> or → explore some of my <a href="/projects" class="green-link">>projects</a> (or use the buttons below).</p>
+<p>Hello. Welcome to my site. You can find more about me on the <a href="/about" class="green-link">>About</a> page, read something on the <a href="/blog" class="green-link">>blog</a> or explore some of my <a href="/projects" class="green-link">>projects</a> (or use the buttons below).</p>
 
 <p>To go back to the previous page, all you need to do is click the heading at the top...</p>
 
@@ -18,7 +17,6 @@ title: "Home"
 
 <div id="random-article-container"></div>
 
-
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   fetch('/feed.json')
@@ -27,9 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return res.json();
     })
     .then(posts => {
-      // Filter out the home page and any items without titles
       const validPosts = posts.filter(p => p.title && p.url !== '/');
-      
+
       if (validPosts.length === 0) {
         console.warn("No articles found in feed.json");
         return;

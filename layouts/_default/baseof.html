@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
+    <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <h1 class="site-title" href="">chcknlegwill</h1>
+            <h1 class="site-title">chcknlegwill</h1>
         </div>
         <nav>
             <a href="/">Home</a>
@@ -21,13 +21,7 @@
     </header>
 
     <main>
-        <h1>My projects</h1>
-<ul class="projects-list"><!--   -->
-    <li>
-      <a href="/projects/project1/">bruh moment</a> — Nov 2, 2025
-    </li>
-   <!--  --><!--  --></ul>
-
+        {{ block "main" . }}{{ end }}
     </main>
 </body>
 </html>

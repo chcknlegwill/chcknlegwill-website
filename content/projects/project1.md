@@ -4,7 +4,7 @@ date: 2025-11-02
 ---
 sdsdsds
 
-# title 
+# title
 
 
 ## bruh moment indeed
