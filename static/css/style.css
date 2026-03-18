@@ -1,38 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-    --bg: #282828;
+    --bg: #3c3836;
     --fg: #ebdbb2;
     --red: #fb4934;
     --yellow: #fabd2f;
     --green: #b8bb26;
     --tan: #d5c4a1;
     --border: #7c6f64;
+
+    --width: 96%;
 }
 
-body.light-mode {
-    --bg: #fbf1c7;
-    --fg: #3c3836;
+* {
+  font-family: 'Fira Code' !important;
+  scrollbar-width: none;
+  font-weight: 425;
+
 }
 
-* { font-family: 'Fira Code' !important;}
+p {
+  font-size: 1.12pc;
+}
 
 body {
     background-color: var(--bg);
     color: var(--fg);
-    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px; /*always leave some padding outside all content*/
     line-height: 1.5;
+    display: flex;
+    align-items: center;
 }
 
-/* Header & Red Box */
-.header-top { display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 10px; }
-.github-link { position: absolute; left: 0; color: var(--fg); }
+body:not(head) {
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  gap: 16px;
+  width: 98%;
+  border-bottom: solid 2px #ebdbb2;
+}
+
+.header {
+  font-size: 1.4pc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  flex-grow: 1;
+}
+
+
+.github-logo {
+  max-width: 700px;
+  max-height: 70px;
+}
+
+.title-container {
+  display: flex;
+  flex-shrink: 1;
+}
+
+.bruh {
+  display: flex;
+}
+
+.title {
+  color: var(--red) !important;
+  text-decoration: none;
+  margin: 0;
+}
+
+a {
+  color: #b8bb26;
+  text-decoration: none;
+}
+
+a:hover:not(.title) {
+  color: #b8bb26d0;
+  text-decoration: underline;
+}
 
 /* Style main page here */
 
 
+/*make nav bar sticky*/
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #ebdbb2;
+  width: var(--width);
+}
+
+nav .nav a {
+  color: #df5611;
+  font-size: 1.4pc;
+}
+
+main {
+  width: var(--width);
+}
 
 
 
@@ -60,23 +140,3 @@ body {
     line-height: 1.4;
 }
 
-/* navigation buttons */
-.button-grid {
-    display: flex;
-    gap: 20px;
-    margin: 40px 0;
-}
-
-.big-button {
-    background-color: #d5c4a1; /* Gruvbox Tan */
-    color: #282828;            /* Dark background text */
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.8rem;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.big-button:hover {
-    background-color: #ebdbb2;
-}

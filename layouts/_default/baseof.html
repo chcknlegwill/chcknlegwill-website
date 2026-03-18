@@ -5,22 +5,36 @@
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"> 
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <h1 class="site-title">chcknlegwill</h1>
+      <div class="header">
+        <div class="links">
+          <a href="https://github.com/chcknlegwill/" target="_blank">
+            <img class="github-logo" id="github" alt="github logo" src="/assets/github_dark.png">
+          </a>
         </div>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/blog">Blog</a>
-            <a href="/about">About</a>
-            <a href="/projects">Projects</a>
-        </nav>
-        <hr class="nav-divider">
+        <div class="title-container">
+          <a class="bruh" href="/">
+            <h1 class="title" href="/">chcknlegwill</h1>
+          </a>
+        </div>
+        <div class="links">
+        </div>
+      </div>
     </header>
+    <nav>
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+      </div>
+    </nav>
 
     <main>
+
         {{ block "main" . }}{{ end }}
     </main>
 </body>
