@@ -12,7 +12,6 @@ title: "Home"
     <a href="/projects" class="big-button">>Projects</a>
 </div>
 
-<hr>
 <p>Random article from <span class="green-link">>blog</span> or <span class="green-link">>projects</span> below:</p>
 
 <div id="random-article-container"></div>

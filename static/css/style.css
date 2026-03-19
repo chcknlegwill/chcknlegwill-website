@@ -85,9 +85,14 @@ a {
   text-decoration: none;
 }
 
-a:hover:not(.title) {
+a:hover:not(.title):not(.nav):not(.bruh) {
   color: #b8bb26d0;
   text-decoration: underline;
+}
+
+a.bruh:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Style main page here */
@@ -103,22 +108,53 @@ nav {
   padding-bottom: 10px;
   border-bottom: solid 2px #ebdbb2;
   width: var(--width);
+
 }
 
 nav .nav a {
   color: #df5611;
   font-size: 1.4pc;
+  position: relative;
+}
+
+nav .nav a:hover {
+  color: #df5611 !important;
+  text-decoration: none !important;
+}
+
+/* add a current bar under the selected category in next commit*/
+nav .nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--green);
+  transition: width 0.2s ease;
+}
+
+nav .nav a:hover::after {
+  width: 100%;
 }
 
 main {
   width: var(--width);
 }
 
-
-
 /* The "Random Article" section styling */
 #random-article-container {
     margin-top: 25px;
+}
+
+.button-grid {
+  padding-bottom: 20px;
+  border-bottom: solid 2px #ebdbb2;
+}
+
+/*include hr just in case it is used by the .md files*/ 
+hr {
+  border-bottom: solid 2px #ebdbb2;
 }
 
 .random-snippet .article-title {
