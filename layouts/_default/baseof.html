@@ -26,10 +26,10 @@
     </header>
     <nav>
       <div class="nav">
-        <a href="/">Home</a>
-        <a href="/blog">Blog</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
+        <a href="/" {{ if .IsHome }}class="active"{{ end }}>Home</a>
+        <a href="/blog" {{ if eq .Section "blog" }}class="active"{{ end }}>Blog</a>
+        <a href="/about" {{ if eq (.RelPermalink | strings.TrimRight "/") "/about" }}class="active"{{ end }}>About</a>
+        <a href="/projects" {{ if eq .Section "projects" }}class="active"{{ end }}>Projects</a>
       </div>
     </nav>
 

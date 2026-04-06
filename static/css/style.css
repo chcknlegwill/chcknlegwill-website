@@ -15,7 +15,7 @@
 * {
   font-family: 'Fira Code' !important;
   scrollbar-width: none;
-  font-weight: 425;
+  font-weight: 500;
 
 }
 
@@ -80,12 +80,12 @@ header {
   margin: 0;
 }
 
-a {
+a:not(nav) {
   color: #b8bb26;
   text-decoration: none;
 }
 
-a:hover:not(.title):not(.nav):not(.bruh) {
+a:hover {
   color: #b8bb26d0;
   text-decoration: underline;
 }
@@ -98,7 +98,6 @@ a.bruh:hover {
 /* Style main page here */
 
 
-/*make nav bar sticky*/
 nav {
   position: sticky;
   top: 0;
@@ -112,17 +111,16 @@ nav {
 }
 
 nav .nav a {
-  color: #df5611;
+  color: #ebdbb2;
   font-size: 1.4pc;
   position: relative;
 }
 
 nav .nav a:hover {
-  color: #df5611 !important;
+  color: #ebdbb2 !important;
   text-decoration: none !important;
 }
 
-/* add a current bar under the selected category in next commit*/
 nav .nav a::after {
   content: '';
   position: absolute;
@@ -130,11 +128,14 @@ nav .nav a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--green);
+  background-color: var(--red);
   transition: width 0.2s ease;
 }
 
-nav .nav a:hover::after {
+nav .nav a:hover::after,
+nav .nav a.active::after {
+  color: #fb4934;
+  background-color: #fb4934;
   width: 100%;
 }
 
