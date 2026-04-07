@@ -3,7 +3,7 @@
 :root {
     --bg: #3c3836;
     --fg: #ebdbb2;
-    --red: #fb4934;
+    --red: #cc221d;
     --yellow: #fabd2f;
     --green: #b8bb26;
     --tan: #d5c4a1;
@@ -16,7 +16,6 @@
   font-family: 'Fira Code' !important;
   scrollbar-width: none;
   font-weight: 500;
-
 }
 
 p {
@@ -27,7 +26,7 @@ body {
     background-color: var(--bg);
     color: var(--fg);
     margin: 0 auto;
-    padding: 10px; /*always leave some padding outside all content*/
+    padding: 10px;
     line-height: 1.5;
     display: flex;
     align-items: center;
@@ -38,6 +37,9 @@ body:not(head) {
   flex-direction: column;
 }
 
+h1 {
+  color: var(--red);
+}
 
 header {
   gap: 16px;
@@ -58,7 +60,6 @@ header {
   display: flex;
   flex-grow: 1;
 }
-
 
 .github-logo {
   max-width: 700px;
@@ -95,8 +96,7 @@ a.bruh:hover {
   color: inherit;
 }
 
-/* Style main page here */
-
+/* Nav */
 
 nav {
   position: sticky;
@@ -107,7 +107,11 @@ nav {
   padding-bottom: 10px;
   border-bottom: solid 2px #ebdbb2;
   width: var(--width);
+}
 
+.nav {
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav .nav a {
@@ -134,8 +138,7 @@ nav .nav a::after {
 
 nav .nav a:hover::after,
 nav .nav a.active::after {
-  color: #fb4934;
-  background-color: #fb4934;
+  background-color: var(--red);
   width: 100%;
 }
 
@@ -143,37 +146,122 @@ main {
   width: var(--width);
 }
 
-/* The "Random Article" section styling */
-#random-article-container {
-    margin-top: 25px;
+/* Home page */
+
+.green-link {
+  color: var(--green);
 }
 
 .button-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   padding-bottom: 20px;
   border-bottom: solid 2px #ebdbb2;
+  margin-bottom: 1rem;
 }
 
-/*include hr just in case it is used by the .md files*/ 
+.big-button {
+  color: var(--green);
+  font-size: 1.3rem;
+  border: 2px solid var(--border);
+  padding: 0.4rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.big-button:hover {
+  background-color: var(--border);
+  text-decoration: none !important;
+  color: var(--green) !important;
+}
+
+/* HR */
 hr {
   border-bottom: solid 2px #ebdbb2;
 }
 
+/* Blog / project list */
+
+.blog-list,
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list li,
+.projects-list li {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-title {
+  font-size: 1.25rem;
+  display: block;
+  color: var(--green);
+  margin-bottom: 0.3rem;
+}
+
+.post-title:hover {
+  color: var(--green) !important;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--tan);
+  margin: 0.2rem 0;
+}
+
+.post-desc {
+  color: var(--fg);
+  font-size: 1rem;
+  margin: 0.3rem 0 0;
+}
+
+/* Blog / project single page */
+
+.blog-header,
+.project-header {
+  margin-bottom: 1rem;
+}
+
+.blog-header h1,
+.project-header h1 {
+  margin-bottom: 0.2rem;
+}
+
+.date {
+  color: var(--tan);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Random article snippet */
+
+#random-article-container {
+  margin-top: 25px;
+}
+
 .random-snippet .article-title {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
 .random-snippet .article-title a {
-    color: var(--red);
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+  color: var(--red);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.random-snippet .article-subheader a {
+  color: var(--green);
 }
 
 .random-snippet .article-excerpt {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    margin-top: 15px;
-    line-height: 1.4;
+  color: var(--fg);
+  font-size: 1.1rem;
+  margin-top: 15px;
+  line-height: 1.4;
 }
-

@@ -1,10 +1,12 @@
 {{ define "main" }}
-<h1>My projects</h1>
+<h1>Projects</h1>
 
 <ul class="projects-list">
   {{ range .Pages }}
     <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a> — {{ .Date.Format "Jan 2, 2006" }}
+      <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p class="post-meta">Added {{ .Date.Format "Jan 2, 2006" }}; Last Updated {{ .Lastmod.Format "Jan 2, 2006" }}</p>
+      <p class="post-desc">{{ .Description }}</p>
     </li>
   {{ end }}
 </ul>

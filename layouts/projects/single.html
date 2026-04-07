@@ -2,7 +2,7 @@
 <div class="project-container">
   <header class="project-header">
     <h1>{{ .Title }}</h1>
-    <p class="date">Published: {{ .Date.Format "Jan 2, 2006" }}</p>
+    <p class="date">Published: {{ .Date.Format "Jan 2, 2006" }} | Last edited: {{ .Lastmod.Format "Jan 2, 2006" }}</p>
   </header>
   <hr>
   <article class="blog-content">

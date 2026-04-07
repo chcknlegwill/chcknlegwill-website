@@ -4,7 +4,7 @@ title: "Home"
 
 <p>Hello. Welcome to my site. You can find more about me on the <a href="/about" class="green-link">>About</a> page, read something on the <a href="/blog" class="green-link">>blog</a> or explore some of my <a href="/projects" class="green-link">>projects</a> (or use the buttons below).</p>
 
-<p>To go back to the previous page, all you need to do is click the heading at the top...</p>
+<p>To go back to the previous page, all you need to do is click the heading at the top (Chcknlegwill in this case) and you'll be sent to the previous page. Or you can use the navigation bar just below the header to go to different pages.</p>
 
 <div class="button-grid">
     <a href="/blog" class="big-button">>Blog</a>
