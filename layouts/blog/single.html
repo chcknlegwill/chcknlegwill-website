@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="blog-container">
+  <header class="blog-header">
+    <h1>{{ .Title }}</h1>
+    <p class="date">Published: {{ .Date.Format "Jan 2, 2006" }} | Last edited: {{ .Lastmod.Format "Jan 2, 2006" }}</p>
+  </header>
+  <article class="blog-content">
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

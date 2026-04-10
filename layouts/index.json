@@ -1,0 +1,12 @@
+[
+  {{- $pages := where .Site.RegularPages "Title" "ne" "" -}}
+  {{- range $i, $p := $pages -}}
+  {{- if $i }},{{ end }}
+  {
+    "title": {{ $p.Title | jsonify }},
+    "date": "{{ $p.Date.Format "Jan 2, 2006" }}",
+    "url": "{{ $p.RelPermalink }}",
+    "excerpt": {{ $p.Summary | jsonify }}
+  }
+  {{- end }}
+]

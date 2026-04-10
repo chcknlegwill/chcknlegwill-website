@@ -1,0 +1,17 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "chcknlegwill"
+
+disableKinds = ["taxonomy", "term"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+    baseName = "feed"
+    isPlainText = true
+
+[outputs]
+  home = ["HTML", "JSON"]
