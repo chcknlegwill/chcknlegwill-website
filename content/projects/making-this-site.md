@@ -1,13 +1,13 @@
 ---
 title: "Making this site"
 date: 2024-05-30
-lastmod: 2024-11-25
+lastmod: 2026-11-25
 description: "The switch between Node.js & Svelte (Scale isn't an issue atm so this is a purely a starters perspective)."
 ---
 
 ## How Was This Site Made?
 
-The site was constructed using SvelteKit (originally Node & Express.js) with Cloudflare Pages for hosting (previously NameCheap). I switched frameworks midway through development, primarily because SvelteKit's reusable component architecture eliminated significant routing and component code that would otherwise require manual writing.
+The site was constructed using SvelteKit (originally Node & Express.js) with Cloudflare Pages for hosting (previously NameCheap). I switched frameworks midway through development, primarily because SvelteKit's reusable component architecture eliminated significant routing and component code that would otherwise require manual routing.
 
 ## Inspiration
 
@@ -21,4 +21,7 @@ Cloudflare Pages proved especially appealing due to straightforward setup, autom
 
 ## Programming the Website
 
-Development began with Node.js and Express.js, leveraging previous experience building A-level projects with these technologies. The switch to SvelteKit brought component-based architecture which made building and maintaining the site significantly easier.
+Development began with Node.js and Express.js, leveraging previous experience building A-level projects with these technologies. The switch to SvelteKit brought component-based architecture which made building and maintaining the site significantly easier. 
+
+However, the update that bought runes to svelte made me switch to an even simpler framework called hugo - this is nice because hugo is MUCH simpler for smaller sites like mine, and offers a way to use one of the best formats ever (markdown). This site is still a work-in-progress but hugo has made a big difference in the speed I can write and upload to the website and not have to rely on other third party extensions as hugo was made to support .md extensions. 
+
