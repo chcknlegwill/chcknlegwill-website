@@ -25,4 +25,9 @@ Here is a list of the parts that I have bought in order to build the bike:
 - [ ] Pure nickel strips 2.0 mm (we need thicker than normal as we are pushing a large ammount of energy through it.
 
 
-## TBD 
+## Making the battery
+To power the controller and motor (and everything else?) we need quite a powerful battery - since I did not buy a pre-made one (as they are very expensive) I bought the batteries, BMS (Battery Management System) and all materials seperately and constructed one myself (I am still in the process of constructing it but it is going well). I originaly made the batteries using just fiberglass tape and zip-ties (see image below):
+
+![batteries-with-zip-ties](batteries_zip-tie_not_good.jpg)
+
+
