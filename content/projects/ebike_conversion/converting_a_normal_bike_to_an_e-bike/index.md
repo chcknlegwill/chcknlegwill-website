@@ -26,8 +26,24 @@ Here is a list of the parts that I have bought in order to build the bike:
 
 
 ## Making the battery
-To power the controller and motor (and everything else?) we need quite a powerful battery - since I did not buy a pre-made one (as they are very expensive) I bought the batteries, BMS (Battery Management System) and all materials seperately and constructed one myself (I am still in the process of constructing it but it is going well). I originaly made the batteries using just fiberglass tape and zip-ties (see image below):
+To power the controller, motor and everything else, we need quite a powerful battery - since I did not buy a pre-made one (as they are very expensive) I bought the batteries, BMS (Battery Management System) and all materials (kapton & fibreglass taple for some structural support).
 
+The basic grouping I am going to use the batteries are to use 3 batteries in a group and zig-zag them so we have one side with a negative terminal and another side with a positive terminal for the whole battery pack (see diagram below).
+
+![battery-cells-diagram](diagram.png)
+
+
+### Grouping the cells
+The cells are going to be in groups of 3 and flipped after every group. To get them together and not fall apart I origininally used fibreglass tape and zip-ties to hold them together, but while welding I found that there was too much space left inbetween the batteries due to the zip-ties to so I used kapton tape to hold the groups together which worked much better as the batteries could sit pretty-much flush with each other.
+
+Orginal grouping (all cells with zip-ties):
 ![batteries-with-zip-ties](batteries_zip-tie_not_good.jpg)
 
+After welding and realising I need to change:
+![kapton_tap_instead_of_zip-ties_around_each_cell](kapton_vs_zip-tie.jpg)
+
+
+TODO: 
+- [ ] Talk more about first welding and provide images of successful volatage.
+- [ ] Explain the structural issues causing too much tension on the welds and them popping off.
 

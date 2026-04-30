@@ -237,6 +237,22 @@ hr {
   margin: 0;
 }
 
+/* Images in blog / project posts 
+
+.blog-content img {
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  margin: 1rem auto;
+}
+*/
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Random article snippet */
 
 #random-article-container {
