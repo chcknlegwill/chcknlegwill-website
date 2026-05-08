@@ -1,0 +1,8 @@
+<div class="gallery"{{ with .Get "width" }} style="max-width: {{ . }}"{{ end }}>
+  {{ range seq 10 }}
+    {{ $key := printf "img%d" . }}
+    {{ with $.Get $key }}
+      <img src="{{ . }}" alt="" loading="lazy"{{ with $.Get "height" }} style="height: {{ . }}"{{ end }}>
+    {{ end }}
+  {{ end }}
+</div>

@@ -36,20 +36,17 @@ To power the controller, motor and everything else, we need quite a powerful bat
 
 The basic grouping I am going to use the batteries are to use 3 batteries in a group and zig-zag them so we have one side with a negative terminal and another side with a positive terminal for the whole battery pack (see diagram below).
 
-![battery-cells-diagram](diagram.png)
+{{< figure src="diagram.png" width="500px" >}}
 
 
 ### Grouping the cells
 The cells are going to be in groups of 3 and flipped after every group. To get them together and not fall apart I originally used fibreglass tape and zip-ties to hold them together, but while welding I found that there was too much space left in-between the batteries due to the zip-ties to so I used kapton tape to hold the groups together which worked much better as the batteries could sit pretty-much flush with each other.
 
-Original grouping (all cells with zip-ties):
-![batteries-with-zip-ties](batteries_zip-tie_not_good.jpg)
-
-After welding and realising I need to change to kapton tape:
-![kapton_tap_instead_of_zip-ties_around_each_cell](kapton_vs_zip-tie.jpg)
+Original grouping (left) vs after switching to kapton tape (right):
+{{< gallery img1="batteries_zip-tie_not_good.jpg" img2="kapton_vs_zip-tie.jpg" width="400px" height="300px">}}
 
 Before I changed the zip-ties, I welded 4 groups together and was reciving the correct voltage:
-![4_groups_of_3_cells_welded_outputting_14_volts](correct_voltage.jpg)
+{{< gallery img1="correct_voltage.jpg" width="1000px" height="800px">}}
 
 I was very pleased with this as the cells had not blown up and the voltage is looking correct - with the changed kapton tape, I then attempted to weld ALL 60 of the batteries to get the first major step.
 
@@ -58,8 +55,10 @@ However, after welding all of the batteries together, moving it around would put
 In order to do this, I need to glue all of the cells together in groups of 3 first so they don't individually move and act as a group instead. After trying this out on a couple of groups the strength between the cells were a LOT stronger than just the fibreglass & kapton tape - to make the battery even stronger I will add glue inbetween the groups so there is even less strain on the individual cells.
 
 Picture of the glued cells (left) and taped cells on the right - notice how the taped cells are not uniform or acting as one "unit" whereas the glued ones are:
-![glued_cells_vs_taped_cells_visual_difference](glued_batteries.jpg)
+{{< gallery img1="glued_batteries.jpg" width="800px" >}}
 
 
 Now I just need to re-do all 60 cells this way and the battery should be much more structurally sound.
+
+
 
