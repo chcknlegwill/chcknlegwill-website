@@ -195,7 +195,7 @@ layout: "simple"
         <div class="lp-location">Serving Westgate-on-Sea & Surrounding Areas</div>
     </header>
     <div class="lp-intro">
-        Technology can be frustrating, but it doesn't have to be. Whether your laptop has ground to a halt, your Wi-Fi won't reach the spare room, or you just need a patient hand explaining a new device—I am here to help.
+        Technology can be frustrating, but it doesn't have to be. Whether your laptop has ground to a halt, your Wi-Fi won't reach the spare room, or you just need a patient hand explaining a new device - I am here to help.
     </div>
     <h2 style="color: var(--yellow); font-size: 1.5rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">How I Can Help You:</h2>
     <div class="lp-grid">
