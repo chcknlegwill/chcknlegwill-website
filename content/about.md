@@ -3,14 +3,13 @@ title: "About me"
 date: 2025-01-01
 ---
 
-Hello, my name is William.
+Hello, my name is Will,
 
 I am the owner of this domain (for now) - did used to host on a server but
 changed to use Cloudflare Pages as it is free.
 
-I am a third year computer science university student and enjoying it a lot. I
-am interested in all aspects of computer science. Feel free to check out my blog
-or my projects if you are interested in exploring this site more.
+Feel free to browse.
+
 
 I would like to give credit to the following people for making this site a
 possibility:
