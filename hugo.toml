@@ -4,8 +4,12 @@ title = "chcknlegwill"
 
 disableKinds = ["taxonomy", "term"]
 
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 
 [outputFormats]
   [outputFormats.JSON]

@@ -1,3 +1,8 @@
+---
+title: ""
+Desc: ""
+---
+
 <style>
     /* Gruvbox Dark Theme Variables */
     :root {
@@ -243,24 +248,19 @@
 </style>
 
 <div class="data-recovery-container">
-
     <div class="data-recovery-shortcut">
       <a href="#data-recovery-form"> 💾 Need More Advanced Data recovery?</a>
     </div>
-
     <div class="lp-container">
         <header class="lp-header">
             <div class="lp-tagline">Friendly, Patient & Jargon-Free</div>
             <h1 class="lp-title">Local IT Help & Tech Support</h1>
             <div class="lp-location">Serving Westgate-on-Sea & Surrounding Areas</div>
         </header>
-
         <div class="lp-intro">
             Technology can be frustrating, but it doesn't have to be. Whether your laptop has ground to a halt, your Wi-Fi won't reach the spare room, or you just need a patient hand explaining a new device - I am here to help.
         </div>
-
         <h2 style="color: var(--yellow); font-size: 1.5rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px;">How I Can Help You:</h2>
-
         <div class="lp-grid">
             <div class="lp-card">
                 <h3><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4bb/512.png" alt="💻"> Laptop & PC Speed-Up</h3>
@@ -279,7 +279,6 @@
                 <p>Helping you get confident with using devices for everyday tasks (emails, video calls, managing accounts) or configuring smart home devices like CCTV cameras.</p>
             </div>
         </div>
-
         <div class="lp-promises">
             <h4>My Guarantees To You:</h4>
             <ul>
@@ -288,7 +287,6 @@
                 <li><strong>Absolute Privacy:</strong> Your personal data, photos, and logins are treated with strict confidentiality in cooperation with UK GDPR guidelines.</li>
             </ul>
         </div>
-
         <footer class="lp-footer">
             <div class="lp-cta">Ready to fix your tech frustrations? Let's have a chat.</div>
             <a href="tel:07512599473" class="lp-contact">📞 Phone: 07512 599473</a>
@@ -296,7 +294,6 @@
             <div class="lp-subtext">Friendly, unhurried support right here in Westgate-on-Sea</div>
         </footer>
     </div>
-
     <!-- Form moved out of lp-container so it's a separate block below it,
          centered on its own via .data-recovery-form-wrapper -->
     <div id="data-recovery-form" class="data-recovery-form-wrapper">
@@ -306,5 +303,4 @@
             style="width:1024px;height:1164px;border:none;">
         </iframe>
     </div>
-
 </div>
