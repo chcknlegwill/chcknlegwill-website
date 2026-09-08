@@ -175,16 +175,17 @@ main {
   flex-wrap: wrap;
   padding-bottom: 20px;
   border-bottom: solid 2px #ebdbb2;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .big-button {
   color: var(--green);
-  font-size: 1.3rem;
-  border: 2px solid var(--border);
+  font-size: 1.8rem;
+  border: 2px solid #ebdbb2; 
   padding: 0.4rem 1rem;
-  display: inline-block;
+  display: flex;
   text-decoration: none;
+  border-radius: 20px;
 }
 
 .big-button:hover {

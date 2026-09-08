@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (container) {
         container.innerHTML = `
           <article class="random-snippet">
-              <h2 class="article-title">Title: <a href="${randomPost.url}">${randomPost.title}.</a></h2>
+              <h2 class="article-title">Title: <a href="${randomPost.url}">${randomPost.title}</a></h2>
               <p class="article-date">Published: ${randomPost.date}</p>
               <h3 class="article-subheader"><a href="${randomPost.url}">${randomPost.title}?</a></h3>
               <div class="article-excerpt">${randomPost.excerpt}</div>
